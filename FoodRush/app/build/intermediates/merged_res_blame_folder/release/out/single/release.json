@@ -1,0 +1,166 @@
+[
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_nav_selector.xml.flat",
+        "source": "com.foodrush.app-main-51:/drawable/nav_selector.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_ic_cart.xml.flat",
+        "source": "com.foodrush.app-main-51:/drawable/ic_cart.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_activity_login.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_item_food.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/item_food.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_item_settings_row.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/item_settings_row.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_item_restaurant.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/item_restaurant.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "com.foodrush.app-main-51:/mipmap-mdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_activity_restaurant_detail.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/activity_restaurant_detail.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "com.foodrush.app-main-51:/mipmap-mdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_burger.png.flat",
+        "source": "com.foodrush.app-main-51:/drawable/burger.png"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.foodrush.app-main-51:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/mipmap-xhdpi_ic_launcher_round.xml.flat",
+        "source": "com.foodrush.app-main-51:/mipmap-xhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_fragment_home.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/mipmap-xxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.foodrush.app-main-51:/mipmap-xxhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_ic_home.xml.flat",
+        "source": "com.foodrush.app-main-51:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_item_order.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/item_order.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_ic_notification.xml.flat",
+        "source": "com.foodrush.app-main-51:/drawable/ic_notification.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "com.foodrush.app-main-51:/mipmap-xxhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "com.foodrush.app-main-51:/mipmap-xhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_fragment_orders.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/fragment_orders.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_ic_food_placeholder.xml.flat",
+        "source": "com.foodrush.app-main-51:/drawable/ic_food_placeholder.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "com.foodrush.app-main-51:/mipmap-hdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_activity_settings.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_item_cart.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/item_cart.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_ic_orders.xml.flat",
+        "source": "com.foodrush.app-main-51:/drawable/ic_orders.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_chip_unselected.xml.flat",
+        "source": "com.foodrush.app-main-51:/drawable/chip_unselected.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_fragment_profile.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_chip_selected.xml.flat",
+        "source": "com.foodrush.app-main-51:/drawable/chip_selected.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_circle_white_bg.xml.flat",
+        "source": "com.foodrush.app-main-51:/drawable/circle_white_bg.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_activity_signup.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.foodrush.app-main-51:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_activity_main.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/color_nav_selector.xml.flat",
+        "source": "com.foodrush.app-main-51:/color/nav_selector.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "com.foodrush.app-main-51:/mipmap-hdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_pizzahut.jpg.flat",
+        "source": "com.foodrush.app-main-51:/drawable/pizzahut.jpg"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_activity_order_confirmation.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/activity_order_confirmation.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_ic_profile.xml.flat",
+        "source": "com.foodrush.app-main-51:/drawable/ic_profile.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_fragment_cart.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/fragment_cart.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_food.jpg.flat",
+        "source": "com.foodrush.app-main-51:/drawable/food.jpg"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/layout_activity_splash.xml.flat",
+        "source": "com.foodrush.app-main-51:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-50:/drawable_pizzahutt.xml.flat",
+        "source": "com.foodrush.app-main-51:/drawable/pizzahutt.xml"
+    }
+]

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#DDBEBA</color>
+    <color name="background">#FAF3EB</color>
+    <color name="black">#121212</color>
+    <color name="button_primary">#8B9D8F</color>
+    <color name="button_secondary">#EAD2CC</color>
+    <color name="card_bg">#FFF2FF</color>
+    <color name="divider">#E8DCD3</color>
+    <color name="error">#D35D5D</color>
+    <color name="green">#6B9B6D</color>
+    <color name="nav_active">#121212</color>
+    <color name="nav_inactive">#999999</color>
+    <color name="primary">#EAD2CC</color>
+    <color name="primary_dark">#C4ADA8</color>
+    <color name="primary_light">#F7F2F0</color>
+    <color name="rating">#F2C94C</color>
+    <color name="red">#D35D5D</color>
+    <color name="secondary">#8B9D8F</color>
+    <color name="secondary_light">#E8ECE9</color>
+    <color name="success">#6B9B6D</color>
+    <color name="surface">#F7EAE1</color>
+    <color name="text_hint">#A1A1A1</color>
+    <color name="text_primary">#121212</color>
+    <color name="text_secondary">#666666</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_alpha">#E6FFFFFF</color>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="added">Added ✓</string>
+    <string name="all_restaurants">All Restaurants</string>
+    <string name="app_name">FoodRush</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dark_mode_subtitle">Enable dark theme</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="deliver_to">Delivering to</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="email">Email</string>
+    <string name="empty_cart">Your cart is empty!\nAdd some delicious food 🍔</string>
+    <string name="error_email_required">Email is required</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_login_failed">Login failed</string>
+    <string name="error_password_length">Password must be at least 6 characters</string>
+    <string name="error_password_required">Password is required</string>
+    <string name="est_delivery">⏱ Estimated delivery: 30–45 min</string>
+    <string name="featured">Featured</string>
+    <string name="food_image">Food image</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="full_name">Full Name</string>
+    <string name="gcm_defaultSenderId" translatable="false">593460865969</string>
+    <string name="google_api_key" translatable="false">AIzaSyB3LoZTl1jbYkmTG1pNXSakod843cXqJYY</string>
+    <string name="google_app_id" translatable="false">1:593460865969:android:f035307735082c24666b90</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB3LoZTl1jbYkmTG1pNXSakod843cXqJYY</string>
+    <string name="google_storage_bucket" translatable="false">foodrush-79014.firebasestorage.app</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="location_default">📍 Ahmedabad, India</string>
+    <string name="login">Log In</string>
+    <string name="login_title">Welcome back!</string>
+    <string name="login_to_see_orders">Please log in to see your orders.</string>
+    <string name="logout">Log Out</string>
+    <string name="my_cart">My Cart 🛒</string>
+    <string name="my_orders">My Orders 📦</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_orders">Orders</string>
+    <string name="nav_profile">Profile</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="no_orders">No orders yet!\nPlace your first order 🍕</string>
+    <string name="notifications">Notifications</string>
+    <string name="notifications_subtitle">Get updates</string>
+    <string name="order_placed">Order Placed! 🎉</string>
+    <string name="order_subtitle">Your food is being prepared.\nEstimated delivery: 30–45 minutes.</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone Number</string>
+    <string name="place_order">Place Order</string>
+    <string name="profile_info">ACCOUNT INFORMATION</string>
+    <string name="project_id" translatable="false">foodrush-79014</string>
+    <string name="reset_email_sent">Password reset email sent!</string>
+    <string name="search_food">Search food, restaurants…</string>
+    <string name="section_account">ACCOUNT</string>
+    <string name="section_more">MORE</string>
+    <string name="section_preferences">PREFERENCES</string>
+    <string name="signup">Sign Up</string>
+    <string name="signup_subtitle">Join FoodRush and start ordering!</string>
+    <string name="tagline">Delivered hot, delivered fast.</string>
+    <style name="Theme.FoodRush" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+    </style>
+    <style name="Theme.FoodRush.Splash" parent="Theme.FoodRush">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/primary</item>
+    </style>
+</resources>

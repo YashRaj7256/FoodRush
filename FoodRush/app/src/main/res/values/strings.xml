@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">FoodRush</string>
+    <string name="tagline">Delivered hot, delivered fast.</string>
+
+    <!-- Auth -->
+    <string name="login_title">Welcome back!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="create_account">Create Account</string>
+    <string name="signup_subtitle">Join FoodRush and start ordering!</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="reset_email_sent">Password reset email sent!</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="section_account">ACCOUNT</string>
+    <string name="section_preferences">PREFERENCES</string>
+    <string name="section_more">MORE</string>
+
+    <string name="notifications">Notifications</string>
+    <string name="notifications_subtitle">Get updates</string>
+
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dark_mode_subtitle">Enable dark theme</string>
+
+    <string name="delete_account">Delete Account</string>
+
+    <!-- Home -->
+    <string name="deliver_to">Delivering to</string>
+    <string name="location_default">📍 Ahmedabad, India</string>
+    <string name="search_food">Search food, restaurants…</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_orders">Orders</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Cart -->
+    <string name="my_cart">My Cart 🛒</string>
+    <string name="empty_cart">Your cart is empty!\nAdd some delicious food 🍔</string>
+    <string name="place_order">Place Order</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="added">Added ✓</string>
+
+    <!-- Orders -->
+    <string name="my_orders">My Orders 📦</string>
+    <string name="no_orders">No orders yet!\nPlace your first order 🍕</string>
+    <string name="login_to_see_orders">Please log in to see your orders.</string>
+
+    <!-- Order Confirmation -->
+    <string name="order_placed">Order Placed! 🎉</string>
+    <string name="order_subtitle">Your food is being prepared.\nEstimated delivery: 30–45 minutes.</string>
+    <string name="est_delivery">⏱ Estimated delivery: 30–45 min</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="featured">Featured</string>
+    <string name="all_restaurants">All Restaurants</string>
+
+    <!-- Profile -->
+    <string name="profile_info">ACCOUNT INFORMATION</string>
+    <string name="logout">Log Out</string>
+
+    <!-- Food item -->
+    <string name="food_image">Food image</string>
+
+    <!-- Errors -->
+    <string name="error_email_required">Email is required</string>
+    <string name="error_password_required">Password is required</string>
+    <string name="error_password_length">Password must be at least 6 characters</string>
+    <string name="error_login_failed">Login failed</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+</resources>

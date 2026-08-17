@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary Colors -->
+    <color name="primary">#E85D3F</color>
+    <color name="primary_dark">#B83D28</color>
+    <color name="primary_light">#FFF0EB</color>
+
+    <!-- Secondary Colors -->
+    <color name="secondary">#365C4A</color>
+    <color name="secondary_light">#E8F3ED</color>
+    <color name="accent">#F8C56B</color>
+
+    <!-- Background & Surface -->
+    <color name="background">#FFF9F6</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="surface">#FFF0EB</color>
+
+    <!-- Basic Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_alpha">#E6FFFFFF</color>
+    <color name="black">#121212</color>
+    <!-- Text Colors -->
+    <color name="text_primary">#1F1B18</color>
+    <color name="text_secondary">#706864</color>
+    <color name="text_hint">#9B918C</color>
+
+    <!-- UI Elements -->
+    <color name="divider">#EDE4DF</color>
+    <color name="button_primary">#E85D3F</color>
+    <color name="button_secondary">#FFF0EB</color>
+
+    <!-- Status Colors -->
+    <color name="success">#6B9B6D</color>
+    <color name="error">#D35D5D</color>
+    <color name="rating">#F2C94C</color>
+
+    <!-- Navigation -->
+
+    <color name="nav_active">#E85D3F</color>
+    <color name="nav_inactive">#8A817D</color>
+
+
+    <!-- Extra -->
+    <color name="red">#D35D5D</color>
+    <color name="green">#6B9B6D</color>
+
+</resources>

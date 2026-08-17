@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_to_cart">कार्ट में डालें</string>
+    <string name="added">जोड़ा गया ✓</string>
+    <string name="app_name">फूडरश</string>
+    <string name="back_to_home">होम पर वापस जाएं</string>
+    <string name="confirm_password">पासवर्ड की पुष्टि करें</string>
+    <string name="create_account">अकाउंट बनाएं</string>
+    <string name="deliver_to">डिलीवरी यहाँ</string>
+    <string name="email">ईमेल</string>
+    <string name="empty_cart">कार्ट खाली है!\nकुछ स्वादिष्ट खाना जोड़ें 🍔</string>
+    <string name="error_email_required">ईमेल आवश्यक है</string>
+    <string name="error_generic">कुछ गलत हुआ। दोबारा कोशिश करें।</string>
+    <string name="error_login_failed">लॉगिन विफल</string>
+    <string name="error_password_length">पासवर्ड कम से कम 6 अक्षर का होना चाहिए</string>
+    <string name="error_password_required">पासवर्ड आवश्यक है</string>
+    <string name="est_delivery">⏱ अनुमानित डिलीवरी: 30–45 मिनट</string>
+    <string name="food_image">खाने की तस्वीर</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="full_name">पूरा नाम</string>
+    <string name="have_account">पहले से अकाउंट है?</string>
+    <string name="location_default">📍 नई दिल्ली, भारत</string>
+    <string name="login">लॉग इन</string>
+    <string name="login_title">वापस स्वागत है!</string>
+    <string name="login_to_see_orders">ऑर्डर देखने के लिए लॉग इन करें।</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="my_cart">मेरी कार्ट 🛒</string>
+    <string name="my_orders">मेरे ऑर्डर 📦</string>
+    <string name="nav_cart">कार्ट</string>
+    <string name="nav_home">होम</string>
+    <string name="nav_orders">ऑर्डर</string>
+    <string name="nav_profile">प्रोफ़ाइल</string>
+    <string name="no_account">अकाउंट नहीं है?</string>
+    <string name="no_orders">अभी कोई ऑर्डर नहीं!\nपहला ऑर्डर दें 🍕</string>
+    <string name="order_placed">ऑर्डर हो गया! 🎉</string>
+    <string name="order_subtitle">आपका खाना तैयार हो रहा है।\nअनुमानित डिलीवरी: 30–45 मिनट।</string>
+    <string name="password">पासवर्ड</string>
+    <string name="phone">फ़ोन नंबर</string>
+    <string name="place_order">ऑर्डर करें</string>
+    <string name="profile_info">अकाउंट जानकारी</string>
+    <string name="reset_email_sent">पासवर्ड रीसेट ईमेल भेजा गया!</string>
+    <string name="search_food">खाना, रेस्तरां खोजें…</string>
+    <string name="signup">साइन अप</string>
+    <string name="signup_subtitle">फूडरश से जुड़ें और ऑर्डर करें!</string>
+    <string name="tagline">गर्म खाना, तेज़ डिलीवरी।</string>
+</resources>
