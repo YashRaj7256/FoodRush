@@ -13,6 +13,7 @@ public class Order {
     private List<CartItem> items;
     private double totalAmount;
     private String status;        // "Placed", "Preparing", "On the Way", "Delivered"
+    private String paymentMethod; // "Cash on Delivery", "UPI", "Card"
     private long timestamp;
 
     // Firebase requires empty constructor
@@ -34,6 +35,7 @@ public class Order {
     public List<CartItem> getItems()  { return items; }
     public double getTotalAmount()    { return totalAmount; }
     public String getStatus()         { return status; }
+    public String getPaymentMethod()  { return paymentMethod; }
     public long getTimestamp()        { return timestamp; }
 
     // ---- Setters ----
@@ -42,5 +44,6 @@ public class Order {
     public void setItems(List<CartItem> items)      { this.items = items; }
     public void setTotalAmount(double totalAmount)  { this.totalAmount = totalAmount; }
     public void setStatus(String status)            { this.status = status; }
+    public void setPaymentMethod(String p)          { this.paymentMethod = p; }
     public void setTimestamp(long timestamp)        { this.timestamp = timestamp; }
 }

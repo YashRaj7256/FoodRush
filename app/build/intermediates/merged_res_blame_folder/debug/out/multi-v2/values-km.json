@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.foodrush.app-mergeDebugResources-48:/values-km/values-km.xml",
+            "outputFile": "com.foodrush.app-mergeDebugResources-3:/values-km/values-km.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Yash Raj\\.gradle\\caches\\transforms-3\\283258da254cde751326c4fb765178c1\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-km\\values.xml",

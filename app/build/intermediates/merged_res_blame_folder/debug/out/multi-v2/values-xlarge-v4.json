@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.foodrush.app-mergeDebugResources-48:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.foodrush.app-mergeDebugResources-3:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Yash Raj\\.gradle\\caches\\transforms-3\\af105c4d675d6b64abfaea09251567fd\\transformed\\appcompat-1.6.1\\res\\values-xlarge-v4\\values-xlarge-v4.xml",

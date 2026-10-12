@@ -21,7 +21,6 @@ import com.foodrush.adapters.CartAdapter;
 import com.foodrush.database.CartManager;
 import com.foodrush.database.FirebaseHelper;
 import com.foodrush.models.CartItem;
-import com.foodrush.models.Order;
 import com.foodrush.utils.NotificationHelper;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -29,19 +28,27 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.UUID;
 
 /**
- * CartFragment — shows all items in the cart with totals and place-order button.
+ * CartFragment — displays items in cart, bill breakdown, payment method picker,
+ * and order checkout logic.
  */
 public class CartFragment extends Fragment implements CartAdapter.CartUpdateListener {
 
     private RecyclerView recyclerView;
     private CartAdapter cartAdapter;
-    private TextView tvTotal, tvEmpty;
+    private TextView tvTotal, tvEmpty, tvCartSubtitle;
+    private TextView tvSubtotal, tvTaxes, tvGrandTotal, tvSelectedPaymentNotice;
+    private View emptyStateLayout, cartContent;
     private Button btnPlaceOrder;
-    private View cartContent;
+
+    // Payment selectors
+    private View btnPaymentCod, btnPaymentUpi, btnPaymentCard;
+    private TextView tvCodLabel, tvUpiLabel, tvCardLabel;
+    private String selectedPaymentMethod = "Cash on Delivery";
 
     @Nullable
     @Override
@@ -55,17 +62,78 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        recyclerView  = view.findViewById(R.id.recyclerView);
-        tvTotal       = view.findViewById(R.id.tvTotal);
-        tvEmpty       = view.findViewById(R.id.tvEmpty);
-        btnPlaceOrder = view.findViewById(R.id.btnPlaceOrder);
-        cartContent   = view.findViewById(R.id.cartContent);
+        recyclerView             = view.findViewById(R.id.recyclerView);
+        tvTotal                  = view.findViewById(R.id.tvTotal);
+        tvEmpty                  = view.findViewById(R.id.tvEmpty);
+        tvCartSubtitle           = view.findViewById(R.id.tvCartSubtitle);
+        emptyStateLayout         = view.findViewById(R.id.emptyStateLayout);
+        cartContent              = view.findViewById(R.id.cartContent);
+        btnPlaceOrder            = view.findViewById(R.id.btnPlaceOrder);
+
+        tvSubtotal               = view.findViewById(R.id.tvSubtotal);
+        tvTaxes                  = view.findViewById(R.id.tvTaxes);
+        tvGrandTotal             = view.findViewById(R.id.tvGrandTotal);
+        tvSelectedPaymentNotice  = view.findViewById(R.id.tvSelectedPaymentNotice);
+
+        btnPaymentCod            = view.findViewById(R.id.btnPaymentCod);
+        btnPaymentUpi            = view.findViewById(R.id.btnPaymentUpi);
+        btnPaymentCard           = view.findViewById(R.id.btnPaymentCard);
+
+        tvCodLabel               = view.findViewById(R.id.tvCodLabel);
+        tvUpiLabel               = view.findViewById(R.id.tvUpiLabel);
+        tvCardLabel              = view.findViewById(R.id.tvCardLabel);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
+        setupPaymentSelection();
         refreshCart();
 
         btnPlaceOrder.setOnClickListener(v -> placeOrder());
+    }
+
+    private void setupPaymentSelection() {
+        btnPaymentCod.setOnClickListener(v -> selectPayment("Cash on Delivery"));
+        btnPaymentUpi.setOnClickListener(v -> selectPayment("UPI / Online Pay"));
+        btnPaymentCard.setOnClickListener(v -> selectPayment("Card"));
+    }
+
+    private void selectPayment(String method) {
+        selectedPaymentMethod = method;
+
+        int selectedBg = R.drawable.bg_payment_selected;
+        int unselectedBg = R.drawable.bg_payment_unselected;
+
+        int primaryColor = requireContext().getColor(R.color.primary);
+        int secondaryColor = requireContext().getColor(R.color.text_secondary);
+
+        // Reset all
+        btnPaymentCod.setBackgroundResource(unselectedBg);
+        btnPaymentUpi.setBackgroundResource(unselectedBg);
+        btnPaymentCard.setBackgroundResource(unselectedBg);
+
+        tvCodLabel.setTextColor(secondaryColor);
+        tvUpiLabel.setTextColor(secondaryColor);
+        tvCardLabel.setTextColor(secondaryColor);
+
+        // Apply active state
+        if ("Cash on Delivery".equals(method)) {
+            btnPaymentCod.setBackgroundResource(selectedBg);
+            tvCodLabel.setTextColor(primaryColor);
+        } else if ("UPI / Online Pay".equals(method)) {
+            btnPaymentUpi.setBackgroundResource(selectedBg);
+            tvUpiLabel.setTextColor(primaryColor);
+        } else {
+            btnPaymentCard.setBackgroundResource(selectedBg);
+            tvCardLabel.setTextColor(primaryColor);
+        }
+
+        tvSelectedPaymentNotice.setText(method);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (getView() != null) refreshCart();
     }
 
     /** Reloads cart items and updates the UI */
@@ -73,29 +141,49 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
         List<CartItem> items = CartManager.getInstance().getCartItems();
 
         if (items.isEmpty()) {
-            tvEmpty.setVisibility(View.VISIBLE);
-            cartContent.setVisibility(View.GONE);
+            if (emptyStateLayout != null) emptyStateLayout.setVisibility(View.VISIBLE);
+            if (cartContent != null) cartContent.setVisibility(View.GONE);
+            if (tvCartSubtitle != null) tvCartSubtitle.setText(R.string.empty_cart);
             return;
         }
 
-        tvEmpty.setVisibility(View.GONE);
-        cartContent.setVisibility(View.VISIBLE);
+        if (emptyStateLayout != null) emptyStateLayout.setVisibility(View.GONE);
+        if (cartContent != null) cartContent.setVisibility(View.VISIBLE);
+
+        int totalCount = CartManager.getInstance().getTotalCount();
+        if (tvCartSubtitle != null) {
+            tvCartSubtitle.setText(getString(R.string.items_summary, totalCount));
+        }
 
         cartAdapter = new CartAdapter(getContext(), items, this);
         recyclerView.setAdapter(cartAdapter);
         updateTotal();
     }
 
-    /** Updates the displayed total price */
+    /** Updates the displayed bill details and grand total */
     private void updateTotal() {
-        double total = CartManager.getInstance().getTotalPrice();
-        tvTotal.setText(String.format("Total: ₹%.2f", total));
+        double subtotal = CartManager.getInstance().getTotalPrice();
+        double taxes = subtotal * 0.05; // 5% taxes and restaurant handling fee
+        double grandTotal = subtotal + taxes;
+
+        String formattedSubtotal = String.format(Locale.getDefault(), "₹%.2f", subtotal);
+        String formattedTaxes = String.format(Locale.getDefault(), "₹%.2f", taxes);
+        String formattedGrandTotal = String.format(Locale.getDefault(), "₹%.2f", grandTotal);
+
+        if (tvSubtotal != null) tvSubtotal.setText(formattedSubtotal);
+        if (tvTaxes != null) tvTaxes.setText(formattedTaxes);
+        if (tvGrandTotal != null) tvGrandTotal.setText(formattedGrandTotal);
+        if (tvTotal != null) tvTotal.setText(formattedGrandTotal);
     }
 
     /** Called by CartAdapter when quantity changes */
     @Override
     public void onCartUpdated() {
         updateTotal();
+        if (tvCartSubtitle != null) {
+            int totalCount = CartManager.getInstance().getTotalCount();
+            tvCartSubtitle.setText(getString(R.string.items_summary, totalCount));
+        }
         if (CartManager.getInstance().getCartItems().isEmpty()) {
             refreshCart();
         }
@@ -117,27 +205,31 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
             return;
         }
 
-        String uid     = currentUser.getUid();
-        String orderId = UUID.randomUUID().toString().substring(0, 8).toUpperCase();
-        double total   = CartManager.getInstance().getTotalPrice();
+        String uid       = currentUser.getUid();
+        String orderId   = UUID.randomUUID().toString().substring(0, 8).toUpperCase();
+        double subtotal  = CartManager.getInstance().getTotalPrice();
+        double taxes     = subtotal * 0.05;
+        double finalTotal= subtotal + taxes;
 
-        // Build and save order
+        // Build item array
         for (CartItem cartItem : items) {
             Map<String, Object> map = new HashMap<>();
-
             map.put("name", cartItem.getFoodItem().getName());
             map.put("price", cartItem.getFoodItem().getPrice());
             map.put("quantity", cartItem.getQuantity());
-
+            if (cartItem.getFoodItem().getImageUrl() != null) {
+                map.put("imageUrl", cartItem.getFoodItem().getImageUrl());
+            }
             itemList.add(map);
         }
 
-        // 🔥 Build order map
+        // Build order map
         Map<String, Object> orderMap = new HashMap<>();
         orderMap.put("orderId", orderId);
         orderMap.put("userId", uid);
         orderMap.put("items", itemList);
-        orderMap.put("totalAmount", total);
+        orderMap.put("totalAmount", finalTotal);
+        orderMap.put("paymentMethod", selectedPaymentMethod);
         orderMap.put("status", "Placed");
         orderMap.put("timestamp", System.currentTimeMillis());
 
@@ -158,12 +250,13 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
                         return;
                     }
 
-                    NotificationHelper.showOrderPlacedNotification(requireContext(), orderId, total);
+                    NotificationHelper.showOrderPlacedNotification(requireContext(), orderId, finalTotal);
                     CartManager.getInstance().clearCart();
 
                     Intent intent = new Intent(getActivity(), OrderConfirmationActivity.class);
                     intent.putExtra("ORDER_ID", orderId);
-                    intent.putExtra("TOTAL", total);
+                    intent.putExtra("TOTAL", finalTotal);
+                    intent.putExtra("PAYMENT_METHOD", selectedPaymentMethod);
                     startActivity(intent);
                 });
     }

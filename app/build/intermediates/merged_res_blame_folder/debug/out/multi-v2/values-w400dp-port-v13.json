@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.foodrush.app-mergeDebugResources-48:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
+            "outputFile": "com.foodrush.app-mergeDebugResources-3:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Yash Raj\\.gradle\\caches\\transforms-3\\62aaa108057dfc871c6e57b3a950eb11\\transformed\\material-1.11.0\\res\\values-w400dp-port-v13\\values-w400dp-port-v13.xml",

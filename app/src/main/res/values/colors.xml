@@ -41,8 +41,19 @@
     <color name="nav_inactive">#8A817D</color>
 
 
-    <!-- Extra -->
+    <!-- Extra & Statuses -->
     <color name="red">#D35D5D</color>
     <color name="green">#6B9B6D</color>
-
+    <color name="status_placed">#E85D3F</color>
+    <color name="status_placed_bg">#FFF0EB</color>
+    <color name="status_preparing">#E67E22</color>
+    <color name="status_preparing_bg">#FEF5E7</color>
+    <color name="status_delivering">#2980B9</color>
+    <color name="status_delivering_bg">#EBF5FB</color>
+    <color name="status_delivered">#27AE60</color>
+    <color name="status_delivered_bg">#EAFAF1</color>
+    <color name="status_cancelled">#C0392B</color>
+    <color name="status_cancelled_bg">#FDEDEC</color>
+    <color name="payment_selected_border">#E85D3F</color>
+    <color name="payment_unselected_border">#EDE4DF</color>
 </resources>

@@ -47,6 +47,7 @@ public class HomeFragment extends Fragment {
     private EditText etSearch;
     private LinearLayout categoryContainer;
     private View progressBar;
+    private TextView tvEmpty;
 
     // 🔥 LOCATION
     private TextView tvLocation;
@@ -78,6 +79,7 @@ public class HomeFragment extends Fragment {
         etSearch = view.findViewById(R.id.etSearch);
         categoryContainer = view.findViewById(R.id.categoryContainer);
         progressBar = view.findViewById(R.id.progressBar);
+        tvEmpty = view.findViewById(R.id.tvEmpty);
 
         // 🔥 LOCATION VIEW
         tvLocation = view.findViewById(R.id.tvLocation);
@@ -223,24 +225,21 @@ public class HomeFragment extends Fragment {
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
                         progressBar.setVisibility(View.GONE);
+                        tvEmpty.setText(R.string.error_loading_restaurants);
+                        tvEmpty.setVisibility(View.VISIBLE);
                     }
                 });
 
-        adapter.setOnItemClickListener(restaurant -> {
-            Intent intent = new Intent(getContext(), RestaurantDetailActivity.class);
-            intent.putExtra("restaurantId", restaurant.getId());
-            intent.putExtra("name", restaurant.getName());
-            intent.putExtra("desc", restaurant.getDescription());
-            startActivity(intent);
-        });
+        adapter.setOnItemClickListener(this::openRestaurant);
+        featuredAdapter.setOnItemClickListener(this::openRestaurant);
+    }
 
-        featuredAdapter.setOnItemClickListener(restaurant -> {
-            Intent intent = new Intent(getContext(), RestaurantDetailActivity.class);
-            intent.putExtra("restaurantId", restaurant.getId());
-            intent.putExtra("name", restaurant.getName());
-            intent.putExtra("desc", restaurant.getDescription());
-            startActivity(intent);
-        });
+    private void openRestaurant(Restaurant restaurant) {
+        Intent intent = new Intent(getContext(), RestaurantDetailActivity.class);
+        intent.putExtra("restaurantId", restaurant.getId());
+        intent.putExtra("name", restaurant.getName());
+        intent.putExtra("desc", restaurant.getDescription());
+        startActivity(intent);
     }
 
     // SEARCH
@@ -262,5 +261,7 @@ public class HomeFragment extends Fragment {
         }
 
         adapter.updateList(filtered);
+        tvEmpty.setVisibility(filtered.isEmpty() ? View.VISIBLE : View.GONE);
+        if (filtered.isEmpty()) tvEmpty.setText(R.string.no_restaurants_found);
     }
 }

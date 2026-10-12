@@ -3,7 +3,6 @@ package com.foodrush.activities;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -26,8 +25,6 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNav;
-    private Handler handler = new Handler();
-    private Runnable notificationRunnable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
         // 🔔 Create notification channel
         NotificationHelper.createNotificationChannel(this);
 
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU
+                && checkSelfPermission("android.permission.POST_NOTIFICATIONS")
+                != android.content.pm.PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{"android.permission.POST_NOTIFICATIONS"}, 1);
         }
 
@@ -73,8 +72,6 @@ public class MainActivity extends AppCompatActivity {
             return true;
         });
 
-        // 🔥 START RANDOM NOTIFICATIONS
-        startRandomNotifications();
     }
 
     /** 🌐 Load saved language */
@@ -91,26 +88,6 @@ public class MainActivity extends AppCompatActivity {
         getResources().updateConfiguration(config, getResources().getDisplayMetrics());
     }
 
-    /** 🔥 Random notification system */
-    private void startRandomNotifications() {
-
-        notificationRunnable = new Runnable() {
-            @Override
-            public void run() {
-
-                NotificationHelper.showRandomNotification(MainActivity.this);
-
-                // ✅ After first notification → fixed 10 minutes
-                int delay = 10 * 60 * 1000; // 10 minutes
-
-                handler.postDelayed(this, delay);
-            }
-        };
-
-        // ✅ First notification after 20 seconds
-        handler.postDelayed(notificationRunnable, 20000);
-    }
-
     /** Replace fragment */
     private void loadFragment(Fragment fragment) {
         getSupportFragmentManager()
@@ -124,12 +101,4 @@ public class MainActivity extends AppCompatActivity {
         bottomNav.setSelectedItemId(itemId);
     }
 
-    /** 🛑 Stop notifications when activity destroyed */
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (handler != null && notificationRunnable != null) {
-            handler.removeCallbacks(notificationRunnable);
-        }
-    }
 }

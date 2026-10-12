@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.foodrush.app-mergeDebugResources-48:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "com.foodrush.app-mergeDebugResources-3:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Yash Raj\\.gradle\\caches\\transforms-3\\62aaa108057dfc871c6e57b3a950eb11\\transformed\\material-1.11.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",

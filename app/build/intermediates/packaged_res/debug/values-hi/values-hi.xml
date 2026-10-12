@@ -4,9 +4,14 @@
     <string name="added">जोड़ा गया ✓</string>
     <string name="app_name">फूडरश</string>
     <string name="back_to_home">होम पर वापस जाएं</string>
+    <string name="bill_details">बिल विवरण</string>
+    <string name="cash_on_delivery">कैश ऑन डिलीवरी</string>
     <string name="confirm_password">पासवर्ड की पुष्टि करें</string>
     <string name="create_account">अकाउंट बनाएं</string>
+    <string name="credit_card">कार्ड</string>
     <string name="deliver_to">डिलीवरी यहाँ</string>
+    <string name="delivery_fee">डिलीवरी शुल्क</string>
+    <string name="delivery_instruction">लगभग 30 मिनट में डिलीवरी होगी</string>
     <string name="email">ईमेल</string>
     <string name="empty_cart">कार्ट खाली है!\nकुछ स्वादिष्ट खाना जोड़ें 🍔</string>
     <string name="error_email_required">ईमेल आवश्यक है</string>
@@ -17,8 +22,11 @@
     <string name="est_delivery">⏱ अनुमानित डिलीवरी: 30–45 मिनट</string>
     <string name="food_image">खाने की तस्वीर</string>
     <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="free">मुफ्त</string>
     <string name="full_name">पूरा नाम</string>
     <string name="have_account">पहले से अकाउंट है?</string>
+    <string name="item_total">आइटम कुल</string>
+    <string name="items_summary">%1$d आइटम चुने गए</string>
     <string name="location_default">📍 नई दिल्ली, भारत</string>
     <string name="login">लॉग इन</string>
     <string name="login_title">वापस स्वागत है!</string>
@@ -32,9 +40,11 @@
     <string name="nav_profile">प्रोफ़ाइल</string>
     <string name="no_account">अकाउंट नहीं है?</string>
     <string name="no_orders">अभी कोई ऑर्डर नहीं!\nपहला ऑर्डर दें 🍕</string>
+    <string name="online_upi">UPI / ऑनलाइन भुगतान</string>
     <string name="order_placed">ऑर्डर हो गया! 🎉</string>
     <string name="order_subtitle">आपका खाना तैयार हो रहा है।\nअनुमानित डिलीवरी: 30–45 मिनट।</string>
     <string name="password">पासवर्ड</string>
+    <string name="payment_method">भुगतान का तरीका</string>
     <string name="phone">फ़ोन नंबर</string>
     <string name="place_order">ऑर्डर करें</string>
     <string name="profile_info">अकाउंट जानकारी</string>
@@ -43,4 +53,6 @@
     <string name="signup">साइन अप</string>
     <string name="signup_subtitle">फूडरश से जुड़ें और ऑर्डर करें!</string>
     <string name="tagline">गर्म खाना, तेज़ डिलीवरी।</string>
+    <string name="taxes_and_charges">कर और शुल्क (5%)</string>
+    <string name="to_pay">कुल भुगतान</string>
 </resources>

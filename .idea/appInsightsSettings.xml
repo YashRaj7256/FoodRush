@@ -9,9 +9,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.foodrush" />
-                  <option name="mobileSdkAppId" value="1:593460865969:android:f035307735082c24666b90" />
-                  <option name="projectId" value="foodrush-79014" />
-                  <option name="projectNumber" value="593460865969" />
+                  <option name="mobileSdkAppId" value="1:243124342045:android:6b4043ac813beb17cba5f4" />
+                  <option name="projectId" value="foodrushv2" />
+                  <option name="projectNumber" value="243124342045" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

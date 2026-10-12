@@ -54,8 +54,18 @@
     <string name="placing_order">Placing order…</string>
     <string name="order_save_failed">Couldn’t place your order. Please try again.</string>
     <string name="login_to_order">Please log in to place an order.</string>
-    <string name="delivery_fee">Delivery</string>
+    <string name="delivery_fee">Delivery Fee</string>
     <string name="free">FREE</string>
+    <string name="bill_details">Bill Details</string>
+    <string name="item_total">Item Total</string>
+    <string name="taxes_and_charges">Taxes &amp; Restaurant Charges (5%)</string>
+    <string name="to_pay">To Pay</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="cash_on_delivery">Cash on Delivery</string>
+    <string name="online_upi">UPI / Online Pay</string>
+    <string name="credit_card">Card</string>
+    <string name="delivery_instruction">Delivering in ~30 mins to your saved address</string>
+    <string name="items_summary">%1$d item(s) selected</string>
 
     <!-- Orders -->
     <string name="my_orders">My Orders 📦</string>
@@ -69,6 +79,8 @@
     <string name="back_to_home">Back to Home</string>
     <string name="featured">Featured</string>
     <string name="all_restaurants">All Restaurants</string>
+    <string name="no_restaurants_found">No restaurants match your search.</string>
+    <string name="error_loading_restaurants">Restaurants couldn’t be loaded. Please check your connection.</string>
 
     <!-- Profile -->
     <string name="profile_info">ACCOUNT INFORMATION</string>

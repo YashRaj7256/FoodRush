@@ -1,12 +1,13 @@
 package com.foodrush.activities;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -29,6 +30,8 @@ public class RestaurantDetailActivity extends AppCompatActivity {
     RecyclerView foodRecycler;
     FoodAdapter foodAdapter;
     List<FoodItem> foodList = new ArrayList<>();
+    View progressBar;
+    TextView emptyState;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +39,13 @@ public class RestaurantDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_restaurant_detail);
 
         image = findViewById(R.id.restaurantImage);
+        image.setImageResource(R.drawable.ic_food_placeholder);
         name = findViewById(R.id.restaurantName);
         desc = findViewById(R.id.restaurantDesc);
         foodRecycler = findViewById(R.id.foodRecycler);
+        progressBar = findViewById(R.id.progressBar);
+        emptyState = findViewById(R.id.emptyState);
+        findViewById(R.id.btnBack).setOnClickListener(v -> finish());
 
         // 🔹 Get data
         String rName = getIntent().getStringExtra("name");
@@ -50,12 +57,13 @@ public class RestaurantDetailActivity extends AppCompatActivity {
         if (rDesc != null) desc.setText(rDesc);
 
         // 🔹 Recycler setup
-        foodRecycler.setLayoutManager(new LinearLayoutManager(this));
+        foodRecycler.setLayoutManager(new GridLayoutManager(this, 2));
         foodAdapter = new FoodAdapter(this, foodList);
         foodRecycler.setAdapter(foodAdapter);
 
         // 🔥 LOAD FOOD FROM FIREBASE (FIXED)
-        if (restaurantId != null) {
+        if (restaurantId != null && !restaurantId.isEmpty()) {
+            progressBar.setVisibility(View.VISIBLE);
 
             FirebaseHelper.getInstance()
                     .getRestaurantsRef()
@@ -82,11 +90,18 @@ public class RestaurantDetailActivity extends AppCompatActivity {
                             }
 
                             foodAdapter.notifyDataSetChanged();
+                            progressBar.setVisibility(View.GONE);
+                            emptyState.setVisibility(foodList.isEmpty() ? View.VISIBLE : View.GONE);
                         }
 
                         @Override
-                        public void onCancelled(@NonNull DatabaseError error) {}
+                        public void onCancelled(@NonNull DatabaseError error) {
+                            progressBar.setVisibility(View.GONE);
+                            emptyState.setVisibility(View.VISIBLE);
+                        }
                     });
+        } else {
+            emptyState.setVisibility(View.VISIBLE);
         }
 
         // 🔥 LOAD IMAGE FROM FIREBASE

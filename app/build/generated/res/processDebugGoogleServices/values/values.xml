@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="gcm_defaultSenderId" translatable="false">593460865969</string>
-    <string name="google_api_key" translatable="false">AIzaSyB3LoZTl1jbYkmTG1pNXSakod843cXqJYY</string>
-    <string name="google_app_id" translatable="false">1:593460865969:android:f035307735082c24666b90</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB3LoZTl1jbYkmTG1pNXSakod843cXqJYY</string>
-    <string name="google_storage_bucket" translatable="false">foodrush-79014.firebasestorage.app</string>
-    <string name="project_id" translatable="false">foodrush-79014</string>
+    <string name="gcm_defaultSenderId" translatable="false">243124342045</string>
+    <string name="google_api_key" translatable="false">AIzaSyBCRFT2_HAXAleYkcNy-IN1KFfpEek9QJs</string>
+    <string name="google_app_id" translatable="false">1:243124342045:android:6b4043ac813beb17cba5f4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBCRFT2_HAXAleYkcNy-IN1KFfpEek9QJs</string>
+    <string name="google_storage_bucket" translatable="false">foodrushv2.firebasestorage.app</string>
+    <string name="project_id" translatable="false">foodrushv2</string>
 </resources>

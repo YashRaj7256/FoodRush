@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -54,6 +55,20 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         holder.tvQuantity.setText(String.valueOf(cartItem.getQuantity()));
         holder.tvItemTotal.setText(String.format("₹%.2f", cartItem.getTotalPrice()));
 
+        if (holder.ivCartThumb != null) {
+            String imgUrl = cartItem.getFoodItem().getImageUrl();
+            if (imgUrl != null && !imgUrl.trim().isEmpty()) {
+                com.bumptech.glide.Glide.with(context)
+                        .load(imgUrl)
+                        .placeholder(R.drawable.ic_food_placeholder)
+                        .error(R.drawable.ic_food_placeholder)
+                        .centerCrop()
+                        .into(holder.ivCartThumb);
+            } else {
+                holder.ivCartThumb.setImageResource(R.drawable.ic_food_placeholder);
+            }
+        }
+
         // Increase quantity
         holder.btnPlus.setOnClickListener(v -> {
             int adapterPosition = holder.getBindingAdapterPosition();
@@ -95,8 +110,11 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         TextView    tvName, tvPrice, tvQuantity, tvItemTotal;
         ImageButton btnPlus, btnMinus, btnDelete;
 
+        ImageView ivCartThumb;
+
         CartViewHolder(@NonNull View itemView) {
             super(itemView);
+            ivCartThumb = itemView.findViewById(R.id.ivCartThumb);
             tvName      = itemView.findViewById(R.id.tvName);
             tvPrice     = itemView.findViewById(R.id.tvPrice);
             tvQuantity  = itemView.findViewById(R.id.tvQuantity);

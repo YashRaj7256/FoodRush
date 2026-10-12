@@ -10,7 +10,6 @@ import androidx.core.app.NotificationManagerCompat;
 
 import com.foodrush.R;
 
-import java.util.Random;
 
 /**
  * Utility class to show local notifications.
@@ -64,52 +63,7 @@ public class NotificationHelper {
         try {
             NotificationManagerCompat.from(context)
                     .notify(notificationId++, builder.build());
-        } catch (SecurityException e) {
-            e.printStackTrace();
-        }
+        } catch (SecurityException ignored) { }
     }
 
-    /**
-     * 🔥 Random cheesy notifications
-     */
-    public static void showRandomNotification(Context context) {
-
-        String[] messages = {
-                "🍔 Feeling hungry? We’ve got something for you!",
-                "🍕 Pizza time? Your favorites are waiting!",
-                "😋 Craving something delicious right now?",
-                "🔥 Hot deals available! Don’t miss out!",
-                "🥤 Refresh yourself with a cool drink!",
-                "👀 Something tasty is just one tap away!",
-                "🚀 Order now before your hunger wins!",
-                "💥 Exclusive food deals just dropped!"
-        };
-
-        String[] titles = {
-                "FoodRush 😋",
-                "Hungry? 🍽️",
-                "Yummy Alert 🍕",
-                "Food Time 🔥"
-        };
-
-        Random random = new Random();
-
-        String message = messages[random.nextInt(messages.length)];
-        String title = titles[random.nextInt(titles.length)];
-
-        NotificationCompat.Builder builder =
-                new NotificationCompat.Builder(context, CHANNEL_ID)
-                        .setSmallIcon(R.drawable.ic_notification)
-                        .setContentTitle(title)
-                        .setContentText(message)
-                        .setPriority(NotificationCompat.PRIORITY_HIGH)
-                        .setAutoCancel(true);
-
-        try {
-            NotificationManagerCompat.from(context)
-                    .notify(notificationId++, builder.build());
-        } catch (SecurityException e) {
-            e.printStackTrace();
-        }
-    }
 }

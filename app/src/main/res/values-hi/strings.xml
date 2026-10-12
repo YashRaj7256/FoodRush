@@ -37,6 +37,18 @@
     <string name="place_order">ऑर्डर करें</string>
     <string name="add_to_cart">कार्ट में डालें</string>
     <string name="added">जोड़ा गया ✓</string>
+    <string name="delivery_fee">डिलीवरी शुल्क</string>
+    <string name="free">मुफ्त</string>
+    <string name="bill_details">बिल विवरण</string>
+    <string name="item_total">आइटम कुल</string>
+    <string name="taxes_and_charges">कर और शुल्क (5%)</string>
+    <string name="to_pay">कुल भुगतान</string>
+    <string name="payment_method">भुगतान का तरीका</string>
+    <string name="cash_on_delivery">कैश ऑन डिलीवरी</string>
+    <string name="online_upi">UPI / ऑनलाइन भुगतान</string>
+    <string name="credit_card">कार्ड</string>
+    <string name="delivery_instruction">लगभग 30 मिनट में डिलीवरी होगी</string>
+    <string name="items_summary">%1$d आइटम चुने गए</string>
 
     <!-- Orders -->
     <string name="my_orders">मेरे ऑर्डर 📦</string>
