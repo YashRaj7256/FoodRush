@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -19,8 +20,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 /**
- * SignupActivity — registers a new user with Firebase Auth
- * and saves their profile to Firebase Realtime Database.
+ * SignupActivity — registers a new user with Firebase Auth,
+ * saves profile to Realtime Database, and animates smoothly on entry.
  */
 public class SignupActivity extends AppCompatActivity {
 
@@ -46,11 +47,85 @@ public class SignupActivity extends AppCompatActivity {
         tvLogin           = findViewById(R.id.tvLogin);
         progressBar       = findViewById(R.id.progressBar);
 
+        animateEntrance();
+
         btnSignup.setOnClickListener(v -> attemptSignup());
         tvLogin.setOnClickListener(v -> {
             startActivity(new Intent(SignupActivity.this, LoginActivity.class));
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             finish();
         });
+    }
+
+    private void animateEntrance() {
+        View headerLayout     = findViewById(R.id.headerLayout);
+        View authCard         = findViewById(R.id.authCard);
+        View tilName          = findViewById(R.id.tilName);
+        View tilEmail         = findViewById(R.id.tilEmail);
+        View tilPhone         = findViewById(R.id.tilPhone);
+        View tilPassword      = findViewById(R.id.tilPassword);
+        View tilConfirm       = findViewById(R.id.tilConfirmPassword);
+        View footerLogin      = findViewById(R.id.footerLogin);
+
+        if (headerLayout != null) {
+            headerLayout.setTranslationY(-50f);
+            headerLayout.setAlpha(0f);
+            headerLayout.animate()
+                    .translationY(0f)
+                    .alpha(1f)
+                    .setDuration(450)
+                    .setInterpolator(new DecelerateInterpolator())
+                    .start();
+        }
+
+        if (authCard != null) {
+            authCard.setTranslationY(100f);
+            authCard.setAlpha(0f);
+            authCard.animate()
+                    .translationY(0f)
+                    .alpha(1f)
+                    .setDuration(500)
+                    .setInterpolator(new DecelerateInterpolator())
+                    .start();
+        }
+
+        View[] fields = new View[]{tilName, tilEmail, tilPhone, tilPassword, tilConfirm};
+        int delay = 150;
+        for (View field : fields) {
+            if (field != null) {
+                field.setTranslationX(-30f);
+                field.setAlpha(0f);
+                field.animate()
+                        .translationX(0f)
+                        .alpha(1f)
+                        .setStartDelay(delay)
+                        .setDuration(350)
+                        .start();
+                delay += 50;
+            }
+        }
+
+        if (btnSignup != null) {
+            btnSignup.setScaleX(0.9f);
+            btnSignup.setScaleY(0.9f);
+            btnSignup.setAlpha(0f);
+            btnSignup.animate()
+                    .scaleX(1f)
+                    .scaleY(1f)
+                    .alpha(1f)
+                    .setStartDelay(delay + 50)
+                    .setDuration(350)
+                    .start();
+        }
+
+        if (footerLogin != null) {
+            footerLogin.setAlpha(0f);
+            footerLogin.animate()
+                    .alpha(1f)
+                    .setStartDelay(delay + 100)
+                    .setDuration(350)
+                    .start();
+        }
     }
 
     private void attemptSignup() {
@@ -88,7 +163,7 @@ public class SignupActivity extends AppCompatActivity {
                     showProgress(false);
                     Toast.makeText(this,
                             "Signup failed: " + (task.getException() != null
-                                    ? task.getException().getMessage() : "Unknown error"),
+                                     ? task.getException().getMessage() : "Unknown error"),
                             Toast.LENGTH_LONG).show();
                 }
             });

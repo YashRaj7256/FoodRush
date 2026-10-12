@@ -2,52 +2,83 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primary">
+    android:background="@drawable/bg_splash_gradient">
 
-    <!-- Center Content -->
+    <!-- Ambient glowing circle -->
+    <View
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_logo_circle_glow" />
+
+    <!-- Center Content animated in code -->
     <LinearLayout
+        android:id="@+id/splashContentLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
         android:orientation="vertical">
 
-        <!-- Logo -->
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/ic_launcher_foreground"/>
+        <!-- Glowing Icon Card -->
+        <FrameLayout
+            android:id="@+id/splashLogoCard"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@drawable/bg_qty_circle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="🍔"
+                android:textSize="50sp" />
+        </FrameLayout>
 
         <!-- App Name -->
         <TextView
+            android:id="@+id/tvAppName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.06"
             android:text="@string/app_name"
             android:textColor="@color/white"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            android:letterSpacing="0.05"
-            android:fontFamily="sans-serif-medium"/>
+            android:textSize="38sp"
+            android:textStyle="bold" />
 
         <!-- Tagline -->
         <TextView
+            android:id="@+id/tvTagline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:letterSpacing="0.04"
             android:text="@string/tagline"
             android:textColor="@color/white_alpha"
-            android:textSize="14sp"
-            android:layout_marginTop="6dp"/>
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/splashProgress"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="24dp"
+            android:indeterminateTint="@color/white" />
     </LinearLayout>
 
     <!-- Bottom Branding -->
     <TextView
+        android:id="@+id/tvFooterBranding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Powered by FoodRush"
-        android:textColor="@color/white_alpha"
-        android:textSize="12sp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="28dp"
+        android:letterSpacing="0.08"
+        android:text="DELIVERED FRESH • FAST • DELICIOUS"
+        android:textColor="@color/white_alpha"
+        android:textSize="11sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

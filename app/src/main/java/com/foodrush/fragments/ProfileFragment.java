@@ -79,6 +79,7 @@ public class ProfileFragment extends Fragment {
 
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (!isAdded()) return;
                         User user = snapshot.getValue(User.class);
 
                         if (user != null) {
@@ -94,6 +95,7 @@ public class ProfileFragment extends Fragment {
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
+                        if (!isAdded()) return;
                         tvName.setText(getString(R.string.error_generic));
                     }
                 });

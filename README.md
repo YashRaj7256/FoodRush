@@ -181,26 +181,4 @@ FoodRush/
 
 ---
 
-## 📋 Viva Q&A Cheatsheet
-
-**Q: What architecture does this app use?**
-A: Activity + Fragment based MVC. Activities host fragments; fragments are swapped via Bottom Navigation.
-
-**Q: How is data stored?**
-A: Firebase Realtime Database (cloud) for users, food items, orders. CartManager is an in-memory singleton.
-
-**Q: How does authentication work?**
-A: Firebase Authentication with Email/Password. On login success, a FirebaseUser session is maintained.
-
-**Q: What is a RecyclerView?**
-A: An efficient list/grid widget that recycles off-screen views. FoodAdapter binds FoodItem data to item_food.xml cards.
-
-**Q: How does localization work?**
-A: Android loads strings from `values-hi/strings.xml` automatically when the device language is set to Hindi.
-
-**Q: How are notifications sent?**
-A: NotificationHelper builds a local notification using NotificationCompat and NotificationManagerCompat when order is placed.
-
----
-
 *Built with ❤️ using Java + Firebase + Material Design*

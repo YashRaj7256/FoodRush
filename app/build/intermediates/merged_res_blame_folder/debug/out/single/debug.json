@@ -8,20 +8,24 @@
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\item_restaurant.xml"
     },
     {
-        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_status_preparing.xml.flat",
-        "source": "com.foodrush.app-main-7:/drawable/bg_status_preparing.xml"
+        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_status_preparing.xml.flat",
+        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_status_preparing.xml"
+    },
+    {
+        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_status_cancelled.xml.flat",
+        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_status_cancelled.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-5:/layout_activity_signup.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/activity_signup.xml"
     },
     {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_fragment_orders.xml.flat",
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\fragment_orders.xml"
     },
     {
-        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_status_cancelled.xml.flat",
-        "source": "com.foodrush.app-main-7:/drawable/bg_status_cancelled.xml"
-    },
-    {
-        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_status_delivering.xml.flat",
-        "source": "com.foodrush.app-main-7:/drawable/bg_status_delivering.xml"
+        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_status_placed.xml.flat",
+        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_status_placed.xml"
     },
     {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_orders.xml.flat",
@@ -36,6 +40,10 @@
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\menu\\bottom_nav_menu.xml"
     },
     {
+        "merged": "com.foodrush.app-merged_res-5:/layout_activity_splash.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/activity_splash.xml"
+    },
+    {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_cart.xml.flat",
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_cart.xml"
     },
@@ -48,16 +56,16 @@
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\color\\nav_selector.xml"
     },
     {
+        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_qty_circle.xml.flat",
+        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_qty_circle.xml"
+    },
+    {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-xxhdpi\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_notification.xml.flat",
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_notification.xml"
-    },
-    {
-        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_qty_circle.xml.flat",
-        "source": "com.foodrush.app-main-7:/drawable/bg_qty_circle.xml"
     },
     {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_activity_restaurant_detail.xml.flat",
@@ -88,16 +96,12 @@
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\fragment_profile.xml"
     },
     {
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_button_gradient.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_button_gradient.xml"
+    },
+    {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_item_order.xml.flat",
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\item_order.xml"
-    },
-    {
-        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_payment_unselected.xml.flat",
-        "source": "com.foodrush.app-main-7:/drawable/bg_payment_unselected.xml"
-    },
-    {
-        "merged": "com.foodrush.app-merged_res-5:/layout_fragment_cart.xml.flat",
-        "source": "com.foodrush.app-main-7:/layout/fragment_cart.xml"
     },
     {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_profile.xml.flat",
@@ -112,6 +116,10 @@
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-mdpi\\ic_launcher.xml"
     },
     {
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_auth_card.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_auth_card.xml"
+    },
+    {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_home.xml.flat",
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_home.xml"
     },
@@ -120,28 +128,32 @@
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-xxhdpi\\ic_launcher.xml"
     },
     {
-        "merged": "com.foodrush.app-merged_res-5:/layout_item_cart.xml.flat",
-        "source": "com.foodrush.app-main-7:/layout/item_cart.xml"
+        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_payment_unselected.xml.flat",
+        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_payment_unselected.xml"
     },
     {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_item_food.xml.flat",
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\item_food.xml"
     },
     {
-        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_payment_selected.xml.flat",
-        "source": "com.foodrush.app-main-7:/drawable/bg_payment_selected.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_activity_login.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_splash_gradient.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_splash_gradient.xml"
     },
     {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_activity_order_confirmation.xml.flat",
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\activity_order_confirmation.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\mipmap-hdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-hdpi\\ic_launcher.xml"
-    },
-    {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_nav_selector.xml.flat",
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\nav_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-hdpi\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_activity_main.xml.flat",
@@ -152,8 +164,8 @@
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\chip_selected.xml"
     },
     {
-        "merged": "com.foodrush.app-merged_res-5:/layout_activity_order_confirmation.xml.flat",
-        "source": "com.foodrush.app-main-7:/layout/activity_order_confirmation.xml"
+        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_payment_selected.xml.flat",
+        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_payment_selected.xml"
     },
     {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_item_settings_row.xml.flat",
@@ -164,12 +176,12 @@
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-hdpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_status_delivered.xml.flat",
-        "source": "com.foodrush.app-main-7:/drawable/bg_status_delivered.xml"
-    },
-    {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_status_delivered.xml.flat",
+        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_status_delivered.xml"
     },
     {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\mipmap-mdpi_ic_launcher_round.xml.flat",
@@ -184,12 +196,16 @@
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-xhdpi\\ic_launcher.xml"
     },
     {
-        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_status_placed.xml.flat",
-        "source": "com.foodrush.app-main-7:/drawable/bg_status_placed.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_logo_circle_glow.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_logo_circle_glow.xml"
     },
     {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_activity_settings.xml.flat",
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_status_delivering.xml.flat",
+        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_status_delivering.xml"
     },
     {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_pizzahut.jpg.flat",
@@ -210,9 +226,5 @@
     {
         "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_fragment_home.xml.flat",
         "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\fragment_home.xml"
-    },
-    {
-        "merged": "com.foodrush.app-merged_res-5:/layout_item_order.xml.flat",
-        "source": "com.foodrush.app-main-7:/layout/item_order.xml"
     }
 ]
