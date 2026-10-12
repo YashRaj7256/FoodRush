@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:2:1-43:12
+ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:2:1-44:12
 MERGED from [androidx.navigation:navigation-common:2.7.6] C:\Users\Yash Raj\.gradle\caches\transforms-3\1be188b4480cc332f3096c4e6676d153\transformed\navigation-common-2.7.6\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.6] C:\Users\Yash Raj\.gradle\caches\transforms-3\3e8902b5d0e0b2290d43887ac03cb7b2\transformed\navigation-runtime-2.7.6\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment:2.7.6] C:\Users\Yash Raj\.gradle\caches\transforms-3\8526615e0328c1d12ac72bed68fe417c\transformed\navigation-fragment-2.7.6\AndroidManifest.xml:17:1-22:12
@@ -115,8 +115,8 @@ ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:8:5-78
 	android:name
 		ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:8:22-76
 application
-ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:10:5-41:19
-INJECTED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:10:5-41:19
+ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:10:5-42:19
+INJECTED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:10:5-42:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Yash Raj\.gradle\caches\transforms-3\62aaa108057dfc871c6e57b3a950eb11\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Yash Raj\.gradle\caches\transforms-3\62aaa108057dfc871c6e57b3a950eb11\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Yash Raj\.gradle\caches\transforms-3\3dae094fce234ce5522c35bb71d95187\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -221,10 +221,16 @@ ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:38:9-98
 		ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:38:72-96
 	android:name
 		ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:38:19-71
-activity#com.foodrush.activities.SettingsActivity
-ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:39:9-64
+activity#com.foodrush.activities.OrderTrackingActivity
+ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:39:9-94
+	android:exported
+		ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:39:68-92
 	android:name
-		ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:39:19-62
+		ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:39:19-67
+activity#com.foodrush.activities.SettingsActivity
+ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:40:9-64
+	android:name
+		ADDED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml:40:19-62
 uses-sdk
 INJECTED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Projects\FoodRush\app\src\main\AndroidManifest.xml

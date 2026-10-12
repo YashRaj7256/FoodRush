@@ -27,6 +27,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.foodrush.R;
 import com.foodrush.activities.RestaurantDetailActivity;
 import com.foodrush.adapters.RestaurantAdapter;
+import com.foodrush.database.AhmedabadDataSeeder;
 import com.foodrush.database.FirebaseHelper;
 import com.foodrush.models.Restaurant;
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -57,9 +58,41 @@ public class HomeFragment extends Fragment {
     private final List<Restaurant> featuredList = new ArrayList<>();
     private String selectedCategory = "All";
 
-    private static final String[] CATEGORIES = {
-            "All", "Fast Food", "Pizza", "Indian", "Drinks"
+    private static class CategoryItem {
+        final String name;
+        final String emoji;
+        CategoryItem(String name, String emoji) {
+            this.name = name;
+            this.emoji = emoji;
+        }
+    }
+
+    private static final CategoryItem[] CATEGORIES = {
+            new CategoryItem("All", "🔥"),
+            new CategoryItem("Gujarati", "🍱"),
+            new CategoryItem("Fast Food", "🍔"),
+            new CategoryItem("Pizza", "🍕"),
+            new CategoryItem("Street Food", "🥟"),
+            new CategoryItem("North Indian", "🍛"),
+            new CategoryItem("Biryani", "🍲"),
+            new CategoryItem("Chinese", "🍜"),
+            new CategoryItem("Desserts", "🍰"),
+            new CategoryItem("Drinks", "🥤")
     };
+
+    private void initDefaultRestaurantsIfEmpty() {
+        if (allRestaurants.isEmpty()) {
+            List<AhmedabadDataSeeder.AhmedabadRestaurantEntry> seederList = AhmedabadDataSeeder.getAhmedabadRestaurants();
+            for (AhmedabadDataSeeder.AhmedabadRestaurantEntry entry : seederList) {
+                allRestaurants.add(entry.restaurant);
+            }
+
+            featuredList.clear();
+            for (int i = 0; i < allRestaurants.size() && i < 5; i++) {
+                featuredList.add(allRestaurants.get(i));
+            }
+        }
+    }
 
     @Nullable
     @Override
@@ -86,17 +119,22 @@ public class HomeFragment extends Fragment {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity());
         getUserLocation();
 
+        initDefaultRestaurantsIfEmpty();
+
         // GRID LIST
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
-        adapter = new RestaurantAdapter(getContext(), new ArrayList<>());
+        adapter = new RestaurantAdapter(getContext(), new ArrayList<>(allRestaurants));
         recyclerView.setAdapter(adapter);
 
         // FEATURED
         featuredRecycler.setLayoutManager(
                 new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false)
         );
-        featuredAdapter = new RestaurantAdapter(getContext(), new ArrayList<>());
+        featuredAdapter = new RestaurantAdapter(getContext(), new ArrayList<>(featuredList));
         featuredRecycler.setAdapter(featuredAdapter);
+
+        adapter.setOnItemClickListener(this::openRestaurant);
+        featuredAdapter.setOnItemClickListener(this::openRestaurant);
 
         buildCategoryChips();
         loadRestaurants();
@@ -160,24 +198,28 @@ public class HomeFragment extends Fragment {
 
     // CATEGORY
     private void buildCategoryChips() {
-        for (String category : CATEGORIES) {
+        if (categoryContainer == null || getContext() == null) return;
+        categoryContainer.removeAllViews();
+        for (CategoryItem item : CATEGORIES) {
             TextView chip = new TextView(getContext());
-            chip.setText(category);
-            chip.setPadding(28, 14, 28, 14);
+            chip.setText(item.emoji + " " + item.name);
+            chip.setPadding(36, 18, 36, 18);
             chip.setTextSize(13f);
+            chip.setTypeface(null, android.graphics.Typeface.BOLD);
             chip.setGravity(Gravity.CENTER);
+            chip.setTag(item.name);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            params.setMarginEnd((int) (8 * getResources().getDisplayMetrics().density));
+            params.setMarginEnd((int) (10 * getResources().getDisplayMetrics().density));
             chip.setLayoutParams(params);
 
-            updateChipStyle(chip, category.equals(selectedCategory));
+            updateChipStyle(chip, item.name.equals(selectedCategory));
             chip.setOnClickListener(v -> {
-                selectedCategory = category;
+                selectedCategory = item.name;
                 for (int i = 0; i < categoryContainer.getChildCount(); i++) {
                     TextView categoryChip = (TextView) categoryContainer.getChildAt(i);
-                    updateChipStyle(categoryChip,
-                            selectedCategory.contentEquals(categoryChip.getText()));
+                    Object tag = categoryChip.getTag();
+                    updateChipStyle(categoryChip, selectedCategory.equals(tag));
                 }
                 filterRestaurants(etSearch.getText().toString());
             });
@@ -186,8 +228,9 @@ public class HomeFragment extends Fragment {
     }
 
     private void updateChipStyle(TextView chip, boolean selected) {
+        if (getContext() == null) return;
         chip.setBackgroundResource(selected ? R.drawable.chip_selected : R.drawable.chip_unselected);
-        chip.setTextColor(getResources().getColor(selected ? R.color.white : R.color.primary));
+        chip.setTextColor(getResources().getColor(selected ? R.color.white : R.color.text_primary));
     }
 
     // LOAD FROM FIREBASE
@@ -203,16 +246,26 @@ public class HomeFragment extends Fragment {
                         allRestaurants.clear();
                         featuredList.clear();
 
-                        for (DataSnapshot ds : snapshot.getChildren()) {
-                            Restaurant r = ds.getValue(Restaurant.class);
+                        if (!snapshot.exists() || snapshot.getChildrenCount() == 0) {
+                            // Seed Firebase database in background
+                            FirebaseHelper.getInstance().seedSampleRestaurantsAndFoods();
 
-                            if (r != null) {
-                                r.setId(ds.getKey());
-                                allRestaurants.add(r);
+                            List<AhmedabadDataSeeder.AhmedabadRestaurantEntry> seederList = AhmedabadDataSeeder.getAhmedabadRestaurants();
+                            for (AhmedabadDataSeeder.AhmedabadRestaurantEntry entry : seederList) {
+                                allRestaurants.add(entry.restaurant);
+                            }
+                        } else {
+                            for (DataSnapshot ds : snapshot.getChildren()) {
+                                Restaurant r = ds.getValue(Restaurant.class);
+
+                                if (r != null) {
+                                    r.setId(ds.getKey());
+                                    allRestaurants.add(r);
+                                }
                             }
                         }
 
-                        for (int i = 0; i < allRestaurants.size() && i < 2; i++) {
+                        for (int i = 0; i < allRestaurants.size() && i < 5; i++) {
                             featuredList.add(allRestaurants.get(i));
                         }
 
@@ -225,8 +278,24 @@ public class HomeFragment extends Fragment {
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
                         progressBar.setVisibility(View.GONE);
-                        tvEmpty.setText(R.string.error_loading_restaurants);
-                        tvEmpty.setVisibility(View.VISIBLE);
+                        // Even on network/rule error, show fallback items so user can interact
+                        if (allRestaurants.isEmpty()) {
+                            List<AhmedabadDataSeeder.AhmedabadRestaurantEntry> seederList = AhmedabadDataSeeder.getAhmedabadRestaurants();
+                            for (AhmedabadDataSeeder.AhmedabadRestaurantEntry entry : seederList) {
+                                allRestaurants.add(entry.restaurant);
+                            }
+
+                            for (int i = 0; i < allRestaurants.size() && i < 5; i++) {
+                                featuredList.add(allRestaurants.get(i));
+                            }
+
+                            adapter.updateList(allRestaurants);
+                            featuredAdapter.updateList(featuredList);
+                            tvEmpty.setVisibility(View.GONE);
+                        } else {
+                            tvEmpty.setText(R.string.error_loading_restaurants);
+                            tvEmpty.setVisibility(View.VISIBLE);
+                        }
                     }
                 });
 
@@ -242,19 +311,26 @@ public class HomeFragment extends Fragment {
         startActivity(intent);
     }
 
-    // SEARCH
+    // SEARCH & CATEGORY FILTER
     private void filterRestaurants(String query) {
         List<Restaurant> filtered = new ArrayList<>();
+        String trimmedQuery = query == null ? "" : query.trim().toLowerCase(Locale.getDefault());
 
         for (Restaurant r : allRestaurants) {
-            String name = r.getName() == null ? "" : r.getName();
-            String description = r.getDescription() == null ? "" : r.getDescription();
-            boolean matchesQuery = query.isEmpty()
-                    || name.toLowerCase(Locale.getDefault()).contains(query.toLowerCase(Locale.getDefault()))
-                    || description.toLowerCase(Locale.getDefault()).contains(query.toLowerCase(Locale.getDefault()));
-            boolean matchesCategory = "All".equals(selectedCategory)
-                    || description.toLowerCase(Locale.getDefault())
-                    .contains(selectedCategory.toLowerCase(Locale.getDefault()));
+            String name = r.getName() == null ? "" : r.getName().toLowerCase(Locale.getDefault());
+            String description = r.getDescription() == null ? "" : r.getDescription().toLowerCase(Locale.getDefault());
+            String category = r.getCategory() == null ? "" : r.getCategory().toLowerCase(Locale.getDefault());
+
+            boolean matchesQuery = trimmedQuery.isEmpty()
+                    || name.contains(trimmedQuery)
+                    || description.contains(trimmedQuery)
+                    || category.contains(trimmedQuery);
+
+            boolean matchesCategory = "All".equalsIgnoreCase(selectedCategory)
+                    || category.equalsIgnoreCase(selectedCategory)
+                    || description.contains(selectedCategory.toLowerCase(Locale.getDefault()))
+                    || name.contains(selectedCategory.toLowerCase(Locale.getDefault()));
+
             if (matchesQuery && matchesCategory) {
                 filtered.add(r);
             }

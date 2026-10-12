@@ -7,13 +7,56 @@
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
         <item name="android:windowBackground">@color/background</item>
-        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:statusBarColor">@color/primary</item>
         <item name="android:navigationBarColor">@color/white</item>
         <item name="android:windowLightNavigationBar">true</item>
-        <item name="android:fontFamily">sans</item>
+
+        <!-- Default Material Button Style -->
+        <item name="materialButtonStyle">@style/Widget.FoodRush.Button.Primary</item>
     </style>
 
-    <!-- Splash screen theme (no title bar, solid primary bg) -->
+    <!-- High-Quality Primary Button Style -->
+    <style name="Widget.FoodRush.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="elevation">3dp</item>
+        <item name="rippleColor">@color/white_alpha</item>
+    </style>
+
+    <!-- High-Quality Outlined / Secondary Button Style -->
+    <style name="Widget.FoodRush.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="rippleColor">@color/button_ripple</item>
+    </style>
+
+    <!-- Pill Button Style (e.g., ADD dish button) -->
+    <style name="Widget.FoodRush.Button.Pill" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/primary</item>
+        <item name="backgroundTint">@color/primary_light</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="elevation">0dp</item>
+        <item name="rippleColor">@color/button_ripple</item>
+    </style>
+
+    <!-- Splash screen theme -->
     <style name="Theme.FoodRush.Splash" parent="Theme.FoodRush">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowBackground">@color/primary</item>

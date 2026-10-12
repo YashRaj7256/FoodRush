@@ -99,7 +99,7 @@
                 app:boxCornerRadiusTopEnd="14dp"
                 app:boxCornerRadiusTopStart="14dp"
                 app:boxStrokeColor="@color/primary"
-                app:startIconDrawable="@android:drawable/ic_dialog_email"
+                app:startIconDrawable="@drawable/ic_mail"
                 app:startIconTint="@color/text_hint">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -126,7 +126,7 @@
                 app:boxStrokeColor="@color/primary"
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="@color/text_secondary"
-                app:startIconDrawable="@android:drawable/ic_lock_idle_lock"
+                app:startIconDrawable="@drawable/ic_lock"
                 app:startIconTint="@color/text_hint">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -165,6 +165,11 @@
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                app:rippleColor="@color/white_alpha"
+                app:icon="@drawable/ic_arrow_forward"
+                app:iconGravity="textEnd"
+                app:iconPadding="8dp"
+                app:iconTint="@color/white"
                 app:cornerRadius="16dp" />
 
             <ProgressBar

@@ -31,6 +31,9 @@ public class SplashActivity extends AppCompatActivity {
         // Notification channel initialization
         NotificationHelper.createNotificationChannel(this);
 
+        // Ensure sample restaurants and foods are seeded to Firebase if empty
+        com.foodrush.database.FirebaseHelper.getInstance().seedSampleRestaurantsAndFoods();
+
         // Views to animate
         View logoCard = findViewById(R.id.splashLogoCard);
         View appName = findViewById(R.id.tvAppName);

@@ -51,6 +51,17 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Vi
 
         holder.name.setText(r.getName());
         holder.desc.setText(r.getDescription());
+
+        if (holder.tvRating != null) {
+            holder.tvRating.setText(String.format(java.util.Locale.getDefault(), "⭐ %.1f", r.getRating()));
+        }
+        if (holder.tvArea != null) {
+            holder.tvArea.setText("📍 " + (r.getArea() != null ? r.getArea() : "Ahmedabad"));
+        }
+        if (holder.tvDeliveryTime != null) {
+            holder.tvDeliveryTime.setText("⏱ " + (r.getDeliveryTime() != null ? r.getDeliveryTime() : "30m"));
+        }
+
         Glide.with(context)
                 .load(r.getImageUrl())
                 .placeholder(R.drawable.ic_food_placeholder)
@@ -67,13 +78,16 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Vi
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView name, desc;
+        TextView name, desc, tvRating, tvArea, tvDeliveryTime;
         ImageView image;
 
         public ViewHolder(View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.tvName);
             desc = itemView.findViewById(R.id.tvDesc);
+            tvRating = itemView.findViewById(R.id.tvRating);
+            tvArea = itemView.findViewById(R.id.tvArea);
+            tvDeliveryTime = itemView.findViewById(R.id.tvDeliveryTime);
             image = itemView.findViewById(R.id.ivImage);
         }
     }

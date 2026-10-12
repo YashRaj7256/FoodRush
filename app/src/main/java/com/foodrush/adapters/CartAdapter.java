@@ -49,11 +49,14 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
     @Override
     public void onBindViewHolder(@NonNull CartViewHolder holder, int position) {
         CartItem cartItem = cartItems.get(position);
-
         holder.tvName.setText(cartItem.getFoodItem().getName());
         holder.tvPrice.setText(String.format("₹%.0f", cartItem.getFoodItem().getPrice()));
         holder.tvQuantity.setText(String.valueOf(cartItem.getQuantity()));
         holder.tvItemTotal.setText(String.format("₹%.2f", cartItem.getTotalPrice()));
+
+        if (holder.ivVegType != null) {
+            holder.ivVegType.setImageResource(cartItem.getFoodItem().isVeg() ? R.drawable.ic_veg : R.drawable.ic_non_veg);
+        }
 
         if (holder.ivCartThumb != null) {
             String imgUrl = cartItem.getFoodItem().getImageUrl();
@@ -109,12 +112,12 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
     static class CartViewHolder extends RecyclerView.ViewHolder {
         TextView    tvName, tvPrice, tvQuantity, tvItemTotal;
         ImageButton btnPlus, btnMinus, btnDelete;
-
-        ImageView ivCartThumb;
+        ImageView ivCartThumb, ivVegType;
 
         CartViewHolder(@NonNull View itemView) {
             super(itemView);
             ivCartThumb = itemView.findViewById(R.id.ivCartThumb);
+            ivVegType   = itemView.findViewById(R.id.ivVegType);
             tvName      = itemView.findViewById(R.id.tvName);
             tvPrice     = itemView.findViewById(R.id.tvPrice);
             tvQuantity  = itemView.findViewById(R.id.tvQuantity);

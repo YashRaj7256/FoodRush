@@ -13,8 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.foodrush.R;
 import com.foodrush.adapters.FoodAdapter;
+import com.foodrush.database.AhmedabadDataSeeder;
 import com.foodrush.database.FirebaseHelper;
 import com.foodrush.models.FoodItem;
+import com.google.android.material.switchmaterial.SwitchMaterial;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -29,7 +31,9 @@ public class RestaurantDetailActivity extends AppCompatActivity {
 
     RecyclerView foodRecycler;
     FoodAdapter foodAdapter;
-    List<FoodItem> foodList = new ArrayList<>();
+    private final List<FoodItem> foodList = new ArrayList<>();
+    private final List<FoodItem> rawFoodList = new ArrayList<>();
+    private boolean isVegOnly = false;
     View progressBar;
     TextView emptyState;
 
@@ -61,7 +65,15 @@ public class RestaurantDetailActivity extends AppCompatActivity {
         foodAdapter = new FoodAdapter(this, foodList);
         foodRecycler.setAdapter(foodAdapter);
 
-        // 🔥 LOAD FOOD FROM FIREBASE (FIXED)
+        SwitchMaterial switchVegOnly = findViewById(R.id.switchVegOnly);
+        if (switchVegOnly != null) {
+            switchVegOnly.setOnCheckedChangeListener((btn, isChecked) -> {
+                isVegOnly = isChecked;
+                applyVegFilter();
+            });
+        }
+
+        // 🔥 LOAD FOOD FROM FIREBASE
         if (restaurantId != null && !restaurantId.isEmpty()) {
             progressBar.setVisibility(View.VISIBLE);
 
@@ -74,30 +86,45 @@ public class RestaurantDetailActivity extends AppCompatActivity {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                            foodList.clear();
+                            rawFoodList.clear();
 
-                            for (DataSnapshot ds : snapshot.getChildren()) {
-
-                                FoodItem item = ds.getValue(FoodItem.class);
-
-                                if (item != null) {
-
-                                    // 🔥 CRITICAL FIX (THIS WAS MISSING)
-                                    item.setId(ds.getKey());
-
-                                    foodList.add(item);
+                            if (!snapshot.exists() || snapshot.getChildrenCount() == 0) {
+                                // Fallback mock dishes from Ahmedabad database if Firebase hasn't synced yet
+                                List<FoodItem> fallbackFoods = AhmedabadDataSeeder.getFoodsForRestaurant(restaurantId);
+                                if (!fallbackFoods.isEmpty()) {
+                                    rawFoodList.addAll(fallbackFoods);
+                                } else {
+                                    rawFoodList.add(new FoodItem("f1", "Classic Veg Burger", "Crispy spiced potato patty with lettuce & mayo", 129, "https://images.unsplash.com/photo-1550547660-d9450f859349?w=500", "Burger"));
+                                    rawFoodList.add(new FoodItem("f2", "Chicken Crisp Burger", "Juicy crispy fried chicken patty with spicy sauce", 199, "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500", "Burger"));
+                                }
+                            } else {
+                                for (DataSnapshot ds : snapshot.getChildren()) {
+                                    FoodItem item = ds.getValue(FoodItem.class);
+                                    if (item != null) {
+                                        item.setId(ds.getKey());
+                                        rawFoodList.add(item);
+                                    }
                                 }
                             }
 
-                            foodAdapter.notifyDataSetChanged();
+                            applyVegFilter();
                             progressBar.setVisibility(View.GONE);
-                            emptyState.setVisibility(foodList.isEmpty() ? View.VISIBLE : View.GONE);
                         }
 
                         @Override
                         public void onCancelled(@NonNull DatabaseError error) {
                             progressBar.setVisibility(View.GONE);
-                            emptyState.setVisibility(View.VISIBLE);
+                            if (rawFoodList.isEmpty()) {
+                                List<FoodItem> fallbackFoods = AhmedabadDataSeeder.getFoodsForRestaurant(restaurantId);
+                                if (!fallbackFoods.isEmpty()) {
+                                    rawFoodList.addAll(fallbackFoods);
+                                } else {
+                                    rawFoodList.add(new FoodItem("f1", "Classic Veg Burger", "Crispy spiced potato patty with lettuce & mayo", 129, "https://images.unsplash.com/photo-1550547660-d9450f859349?w=500", "Burger"));
+                                }
+                                applyVegFilter();
+                            } else {
+                                emptyState.setVisibility(View.VISIBLE);
+                            }
                         }
                     });
         } else {
@@ -127,5 +154,16 @@ public class RestaurantDetailActivity extends AppCompatActivity {
                         public void onCancelled(@NonNull DatabaseError error) {}
                     });
         }
+    }
+
+    private void applyVegFilter() {
+        foodList.clear();
+        for (FoodItem item : rawFoodList) {
+            if (!isVegOnly || item.isVeg()) {
+                foodList.add(item);
+            }
+        }
+        foodAdapter.notifyDataSetChanged();
+        emptyState.setVisibility(foodList.isEmpty() ? View.VISIBLE : View.GONE);
     }
 }

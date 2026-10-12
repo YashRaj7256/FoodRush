@@ -1,74 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/background">
 
-    <!-- ─── STICKY HEADER (stays on top, never scrolls) ─── -->
+    <!-- ─── MODERN STICKY TOP HEADER ─── -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/primary"
+        android:background="@color/white"
         android:orientation="vertical"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="14dp"
         android:elevation="6dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/deliver_to"
-            android:textColor="@color/white_alpha"
-            android:textSize="11sp"
-            android:letterSpacing="0.08"
-            android:textAllCaps="true"/>
-
+        <!-- Deliver to Header Row -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="14dp">
+            android:gravity="center_vertical">
 
-            <TextView
-                android:id="@+id/tvLocation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/location_default"
-                android:textColor="@color/white"
-                android:textSize="17sp"
-                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_location_pin"
+                android:contentDescription="Location"
+                app:tint="@color/primary"/>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:text="▾"
-                android:textColor="@color/white"
-                android:textSize="14sp"/>
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deliver_to"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp"
+                    android:letterSpacing="0.06"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/location_default"
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="▾"
+                        android:textColor="@color/primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Quick Notification / Status Badge Icon -->
+            <FrameLayout
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/chip_unselected"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_notification"
+                    android:contentDescription="Notifications"
+                    app:tint="@color/text_primary"/>
+            </FrameLayout>
         </LinearLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <!-- Modern Elevated Search Bar -->
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:hint="@string/search_food"
-            android:background="@android:color/transparent">
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/surface"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/divider"
+            app:strokeWidth="1dp">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etSearch"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/white"
-                android:inputType="text"
-                android:paddingStart="14dp"
-                android:paddingEnd="14dp"
-                android:textSize="14sp"/>
-        </com.google.android.material.textfield.TextInputLayout>
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="14dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_search"
+                    android:contentDescription="Search"
+                    app:tint="@color/text_secondary"/>
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/search_food"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:imeOptions="actionSearch"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_filter"
+                    android:contentDescription="Filter"
+                    app:tint="@color/primary"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 
     <!-- ─── FULL PAGE SCROLL BODY ─── -->
@@ -83,18 +157,123 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
 
-            <!-- ─── CATEGORY CHIPS ─── -->
+            <!-- ─── PROMO BANNER ─── -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp"
+                app:strokeWidth="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_promo_banner"
+                    android:paddingHorizontal="18dp"
+                    android:paddingVertical="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/bannerGraphic"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/chip_selected"
+                            android:backgroundTint="@color/white_alpha"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="3dp"
+                            android:text="⚡ FLASH DEAL"
+                            android:textColor="@color/primary_dark"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="50% OFF Up to ₹120"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="On authentic Ahmedabad favourites"
+                            android:textColor="@color/white_alpha"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Use code: FOODRUSH50"
+                            android:textColor="@color/accent"
+                            android:textSize="11sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/bannerGraphic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="🍕"
+                        android:textSize="48sp" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ─── CUISINE / CATEGORY MENU HEADER ─── -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="6dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Explore Cuisines"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See All"
+                    android:textColor="@color/primary"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- ─── CATEGORY CHIPS CONTAINER (Horizontal Scroll) ─── -->
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scrollbars="none"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:paddingTop="14dp"
-                android:paddingBottom="8dp"
-                android:clipToPadding="false">
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="10dp"
+                android:clipToPadding="false"
+                android:overScrollMode="never">
 
                 <LinearLayout
                     android:id="@+id/categoryContainer"
@@ -109,7 +288,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="8dp"
+                android:layout_margin="16dp"
+                android:indeterminateTint="@color/primary"
                 android:visibility="gone"/>
 
             <!-- ─── FEATURED SECTION HEADER ─── -->
@@ -119,14 +299,14 @@
                 android:orientation="horizontal"
                 android:paddingStart="18dp"
                 android:paddingEnd="18dp"
-                android:paddingTop="6dp"
-                android:paddingBottom="4dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
                 android:gravity="center_vertical">
 
                 <View
                     android:layout_width="4dp"
-                    android:layout_height="20dp"
-                    android:background="@color/primary"
+                    android:layout_height="18dp"
+                    android:background="@drawable/bg_button_gradient"
                     android:layout_marginEnd="8dp"/>
 
                 <TextView
@@ -137,20 +317,28 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ Top Rated"
+                    android:textColor="@color/rating"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
-            <!-- ─── FEATURED RECYCLER (horizontal, fixed height) ─── -->
+            <!-- ─── FEATURED RECYCLER (horizontal) ─── -->
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/featuredRecycler"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="235dp"
                 android:orientation="horizontal"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
                 android:clipToPadding="false"
                 android:nestedScrollingEnabled="false"
                 android:layout_marginTop="6dp"
-                android:layout_marginBottom="8dp"/>
+                android:layout_marginBottom="12dp"/>
 
             <!-- ─── ALL RESTAURANTS SECTION HEADER ─── -->
             <LinearLayout
@@ -159,14 +347,14 @@
                 android:orientation="horizontal"
                 android:paddingStart="18dp"
                 android:paddingEnd="18dp"
-                android:paddingTop="8dp"
+                android:paddingTop="10dp"
                 android:paddingBottom="6dp"
                 android:gravity="center_vertical">
 
                 <View
                     android:layout_width="4dp"
-                    android:layout_height="20dp"
-                    android:background="@color/primary"
+                    android:layout_height="18dp"
+                    android:background="@drawable/bg_button_gradient"
                     android:layout_marginEnd="8dp"/>
 
                 <TextView
@@ -177,18 +365,23 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Near You 📍"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"/>
             </LinearLayout>
 
             <!-- ─── MAIN RESTAURANTS RECYCLER ─── -->
-            <!-- nestedScrollingEnabled=false hands scroll control to NestedScrollView -->
-            <!-- wrap_content + nestedScrollingEnabled=false is the correct pattern -->
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:nestedScrollingEnabled="false"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 android:paddingBottom="24dp"
                 android:clipToPadding="false"/>
 

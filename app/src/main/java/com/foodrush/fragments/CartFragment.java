@@ -50,6 +50,14 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
     private TextView tvCodLabel, tvUpiLabel, tvCardLabel;
     private String selectedPaymentMethod = "Cash on Delivery";
 
+    // Coupon views & state
+    private android.widget.EditText etCouponCode;
+    private com.google.android.material.button.MaterialButton btnApplyCoupon;
+    private TextView tvCouponFeedback, tvDiscount;
+    private View layoutDiscountRow;
+    private com.foodrush.models.Coupon appliedCoupon = null;
+    private final Map<String, com.foodrush.models.Coupon> couponMap = new HashMap<>();
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -83,12 +91,130 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
         tvUpiLabel               = view.findViewById(R.id.tvUpiLabel);
         tvCardLabel              = view.findViewById(R.id.tvCardLabel);
 
+        // Coupon views
+        etCouponCode             = view.findViewById(R.id.etCouponCode);
+        btnApplyCoupon           = view.findViewById(R.id.btnApplyCoupon);
+        tvCouponFeedback         = view.findViewById(R.id.tvCouponFeedback);
+        tvDiscount               = view.findViewById(R.id.tvDiscount);
+        layoutDiscountRow        = view.findViewById(R.id.layoutDiscountRow);
+
+        initCoupons();
+        setupCouponListeners(view);
+        setupAddressSelector(view);
+
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         setupPaymentSelection();
         refreshCart();
 
         btnPlaceOrder.setOnClickListener(v -> placeOrder());
+    }
+
+    private void setupAddressSelector(View view) {
+        TextView tvAddressIcon = view.findViewById(R.id.tvAddressIcon);
+        TextView tvAddressType = view.findViewById(R.id.tvAddressType);
+        TextView tvAddressDetails = view.findViewById(R.id.tvAddressDetails);
+        View btnChangeAddress = view.findViewById(R.id.btnChangeAddress);
+        View cardDeliveryAddress = view.findViewById(R.id.cardDeliveryAddress);
+
+        final String[] addressOptions = {
+                "🏠 Home - Flat 402, Sunshine Heights, Ring Road, Ahmedabad",
+                "🏢 Work - ByteSpace Tech Park, Tower B, 3rd Floor, Ahmedabad",
+                "📍 Hotel - Room 204, Grand Palace Hotel, Station Road, Ahmedabad"
+        };
+
+        View.OnClickListener clickListener = v -> {
+            new com.google.android.material.dialog.MaterialAlertDialogBuilder(requireContext())
+                    .setTitle("Select Delivery Address")
+                    .setItems(addressOptions, (dialog, which) -> {
+                        String selected = addressOptions[which];
+                        if (which == 0) {
+                            tvAddressIcon.setText("🏠");
+                            tvAddressType.setText("Delivering to Home");
+                            tvAddressDetails.setText("Flat 402, Sunshine Heights, Ring Road, Ahmedabad");
+                        } else if (which == 1) {
+                            tvAddressIcon.setText("🏢");
+                            tvAddressType.setText("Delivering to Work");
+                            tvAddressDetails.setText("ByteSpace Tech Park, Tower B, 3rd Floor, Ahmedabad");
+                        } else {
+                            tvAddressIcon.setText("📍");
+                            tvAddressType.setText("Delivering to Hotel / Other");
+                            tvAddressDetails.setText("Room 204, Grand Palace Hotel, Station Road, Ahmedabad");
+                        }
+                        Toast.makeText(getContext(), "Delivery address updated", Toast.LENGTH_SHORT).show();
+                    })
+                    .setNegativeButton("Cancel", null)
+                    .show();
+        };
+
+        if (btnChangeAddress != null) btnChangeAddress.setOnClickListener(clickListener);
+        if (cardDeliveryAddress != null) cardDeliveryAddress.setOnClickListener(clickListener);
+    }
+
+    private void initCoupons() {
+        couponMap.put("RUSH50", new com.foodrush.models.Coupon("RUSH50", "50% OFF up to ₹100", 50, 100, 149));
+        couponMap.put("HUNGRY", new com.foodrush.models.Coupon("HUNGRY", "Flat ₹75 OFF on orders above ₹199", 100, 75, 199));
+        couponMap.put("SAVE20", new com.foodrush.models.Coupon("SAVE20", "20% OFF up to ₹150", 20, 150, 99));
+    }
+
+    private void setupCouponListeners(View view) {
+        btnApplyCoupon.setOnClickListener(v -> {
+            if (appliedCoupon != null) {
+                // Remove coupon
+                appliedCoupon = null;
+                etCouponCode.setEnabled(true);
+                etCouponCode.setText("");
+                btnApplyCoupon.setText(R.string.apply);
+                btnApplyCoupon.setBackgroundTintList(android.content.res.ColorStateList.valueOf(requireContext().getColor(R.color.primary)));
+                tvCouponFeedback.setVisibility(View.GONE);
+                layoutDiscountRow.setVisibility(View.GONE);
+                updateTotal();
+                Toast.makeText(getContext(), "Coupon removed", Toast.LENGTH_SHORT).show();
+            } else {
+                String code = etCouponCode.getText().toString().trim().toUpperCase();
+                applyCouponCode(code);
+            }
+        });
+
+        View chipRush50 = view.findViewById(R.id.chipCouponRush50);
+        View chipHungry = view.findViewById(R.id.chipCouponHungry);
+        View chipSave20 = view.findViewById(R.id.chipCouponSave20);
+
+        if (chipRush50 != null) chipRush50.setOnClickListener(v -> applyCouponCode("RUSH50"));
+        if (chipHungry != null) chipHungry.setOnClickListener(v -> applyCouponCode("HUNGRY"));
+        if (chipSave20 != null) chipSave20.setOnClickListener(v -> applyCouponCode("SAVE20"));
+    }
+
+    private void applyCouponCode(String code) {
+        if (code.isEmpty()) {
+            Toast.makeText(getContext(), "Please enter a coupon code", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        com.foodrush.models.Coupon coupon = couponMap.get(code);
+        if (coupon == null) {
+            Toast.makeText(getContext(), "Invalid coupon code: " + code, Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        double subtotal = CartManager.getInstance().getTotalPrice();
+        if (subtotal < coupon.getMinOrderAmount()) {
+            Toast.makeText(getContext(),
+                    String.format(Locale.getDefault(), "Minimum order ₹%.0f required for %s", coupon.getMinOrderAmount(), code),
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        appliedCoupon = coupon;
+        etCouponCode.setText(coupon.getCode());
+        etCouponCode.setEnabled(false);
+        btnApplyCoupon.setText(R.string.remove);
+        btnApplyCoupon.setBackgroundTintList(android.content.res.ColorStateList.valueOf(requireContext().getColor(R.color.error)));
+
+        double discount = coupon.calculateDiscount(subtotal);
+        tvCouponFeedback.setVisibility(View.VISIBLE);
+        tvCouponFeedback.setText(getString(R.string.coupon_applied, discount));
+        updateTotal();
     }
 
     private void setupPaymentSelection() {
@@ -163,8 +289,23 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
     /** Updates the displayed bill details and grand total */
     private void updateTotal() {
         double subtotal = CartManager.getInstance().getTotalPrice();
-        double taxes = subtotal * 0.05; // 5% taxes and restaurant handling fee
-        double grandTotal = subtotal + taxes;
+        double discount = 0.0;
+        if (appliedCoupon != null) {
+            discount = appliedCoupon.calculateDiscount(subtotal);
+            if (discount > 0) {
+                if (layoutDiscountRow != null) layoutDiscountRow.setVisibility(View.VISIBLE);
+                if (tvDiscount != null) {
+                    tvDiscount.setText(String.format(Locale.getDefault(), "-₹%.2f", discount));
+                }
+            } else {
+                if (layoutDiscountRow != null) layoutDiscountRow.setVisibility(View.GONE);
+            }
+        } else {
+            if (layoutDiscountRow != null) layoutDiscountRow.setVisibility(View.GONE);
+        }
+
+        double taxes = Math.max(0, (subtotal - discount)) * 0.05; // 5% taxes on discounted amount
+        double grandTotal = Math.max(0, subtotal - discount + taxes);
 
         String formattedSubtotal = String.format(Locale.getDefault(), "₹%.2f", subtotal);
         String formattedTaxes = String.format(Locale.getDefault(), "₹%.2f", taxes);
@@ -208,8 +349,9 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
         String uid       = currentUser.getUid();
         String orderId   = UUID.randomUUID().toString().substring(0, 8).toUpperCase();
         double subtotal  = CartManager.getInstance().getTotalPrice();
-        double taxes     = subtotal * 0.05;
-        double finalTotal= subtotal + taxes;
+        double discount  = appliedCoupon != null ? appliedCoupon.calculateDiscount(subtotal) : 0.0;
+        double taxes     = Math.max(0, (subtotal - discount)) * 0.05;
+        double finalTotal= Math.max(0, subtotal - discount + taxes);
 
         // Build item array
         for (CartItem cartItem : items) {
@@ -228,6 +370,11 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
         orderMap.put("orderId", orderId);
         orderMap.put("userId", uid);
         orderMap.put("items", itemList);
+        orderMap.put("subtotal", subtotal);
+        orderMap.put("discount", discount);
+        if (appliedCoupon != null) {
+            orderMap.put("couponCode", appliedCoupon.getCode());
+        }
         orderMap.put("totalAmount", finalTotal);
         orderMap.put("paymentMethod", selectedPaymentMethod);
         orderMap.put("status", "Placed");

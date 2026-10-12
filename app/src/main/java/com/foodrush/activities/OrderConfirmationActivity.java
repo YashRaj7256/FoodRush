@@ -26,6 +26,7 @@ public class OrderConfirmationActivity extends AppCompatActivity {
         TextView tvPaymentMethod = findViewById(R.id.tvPaymentMethod);
         TextView tvOrderTotal    = findViewById(R.id.tvOrderTotal);
         Button   btnBackHome     = findViewById(R.id.btnBackHome);
+        Button   btnTrackOrder   = findViewById(R.id.btnTrackOrder);
 
         // Receive order data from Intent
         String orderId = getIntent().getStringExtra("ORDER_ID");
@@ -40,6 +41,13 @@ public class OrderConfirmationActivity extends AppCompatActivity {
         } else {
             tvPaymentMethod.setText("Cash on Delivery");
         }
+
+        // Live tracking button
+        btnTrackOrder.setOnClickListener(v -> {
+            Intent intent = new Intent(this, OrderTrackingActivity.class);
+            intent.putExtra("ORDER_ID", orderId);
+            startActivity(intent);
+        });
 
         // Go back to main home screen
         btnBackHome.setOnClickListener(v -> navigateToMain());

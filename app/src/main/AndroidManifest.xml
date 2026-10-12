@@ -34,8 +34,9 @@
         <!-- Main Activity (hosts bottom nav + fragments) -->
         <activity android:name=".activities.MainActivity" android:exported="false"/>
 
-        <!-- Order Confirmation Activity -->
+        <!-- Order Confirmation & Tracking Activities -->
         <activity android:name=".activities.OrderConfirmationActivity" android:exported="false"/>
+        <activity android:name=".activities.OrderTrackingActivity" android:exported="false"/>
         <activity android:name=".activities.SettingsActivity"/>
 
     </application>

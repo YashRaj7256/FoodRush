@@ -1,51 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="accent">#F8C56B</color>
-    <color name="background">#FFF9F6</color>
+    <color name="accent">#FFA000</color>
+    <color name="accent_light">#FFF8E1</color>
+    <color name="background">#F8F9FD</color>
     <color name="black">#121212</color>
-    <color name="button_primary">#E85D3F</color>
-    <color name="button_secondary">#FFF0EB</color>
+    <color name="button_primary">#FF4B2B</color>
+    <color name="button_ripple">#26FF4B2B</color>
+    <color name="button_secondary">#FFF2EE</color>
     <color name="card_bg">#FFFFFF</color>
-    <color name="divider">#EDE4DF</color>
-    <color name="error">#D35D5D</color>
-    <color name="green">#6B9B6D</color>
-    <color name="nav_active">#E85D3F</color>
-    <color name="nav_inactive">#8A817D</color>
-    <color name="payment_selected_border">#E85D3F</color>
-    <color name="payment_unselected_border">#EDE4DF</color>
-    <color name="primary">#E85D3F</color>
-    <color name="primary_dark">#B83D28</color>
-    <color name="primary_light">#FFF0EB</color>
-    <color name="rating">#F2C94C</color>
-    <color name="red">#D35D5D</color>
-    <color name="secondary">#365C4A</color>
-    <color name="secondary_light">#E8F3ED</color>
-    <color name="status_cancelled">#C0392B</color>
-    <color name="status_cancelled_bg">#FDEDEC</color>
-    <color name="status_delivered">#27AE60</color>
-    <color name="status_delivered_bg">#EAFAF1</color>
-    <color name="status_delivering">#2980B9</color>
-    <color name="status_delivering_bg">#EBF5FB</color>
-    <color name="status_placed">#E85D3F</color>
+    <color name="divider">#ECEFF3</color>
+    <color name="divider_subtle">#F1F3F6</color>
+    <color name="error">#EF4444</color>
+    <color name="error_light">#FEE2E2</color>
+    <color name="green">#10B981</color>
+    <color name="nav_active">#FF4B2B</color>
+    <color name="nav_inactive">#8E95A2</color>
+    <color name="non_veg_red">#EF4444</color>
+    <color name="payment_selected_border">#FF4B2B</color>
+    <color name="payment_unselected_border">#ECEFF3</color>
+    <color name="primary">#FF4B2B</color>
+    <color name="primary_dark">#E03A1B</color>
+    <color name="primary_gradient_end">#FF3D00</color>
+    <color name="primary_gradient_start">#FF5722</color>
+    <color name="primary_light">#FFF2EE</color>
+    <color name="rating">#F59E0B</color>
+    <color name="rating_bg">#FFFBEB</color>
+    <color name="red">#EF4444</color>
+    <color name="secondary">#1E232C</color>
+    <color name="secondary_light">#F4F6F9</color>
+    <color name="status_cancelled">#EF4444</color>
+    <color name="status_cancelled_bg">#FEF2F2</color>
+    <color name="status_delivered">#10B981</color>
+    <color name="status_delivered_bg">#ECFDF5</color>
+    <color name="status_delivering">#3B82F6</color>
+    <color name="status_delivering_bg">#EFF6FF</color>
+    <color name="status_placed">#FF4B2B</color>
     <color name="status_placed_bg">#FFF0EB</color>
-    <color name="status_preparing">#E67E22</color>
-    <color name="status_preparing_bg">#FEF5E7</color>
-    <color name="success">#6B9B6D</color>
-    <color name="surface">#FFF0EB</color>
-    <color name="text_hint">#9B918C</color>
-    <color name="text_primary">#1F1B18</color>
-    <color name="text_secondary">#706864</color>
+    <color name="status_preparing">#F59E0B</color>
+    <color name="status_preparing_bg">#FEF3C7</color>
+    <color name="success">#10B981</color>
+    <color name="success_light">#E6F9F2</color>
+    <color name="surface">#F4F6F9</color>
+    <color name="surface_variant">#ECEFF3</color>
+    <color name="text_disabled">#B8BCC6</color>
+    <color name="text_hint">#9EA5B1</color>
+    <color name="text_primary">#1A1D23</color>
+    <color name="text_secondary">#6E7787</color>
+    <color name="veg_green">#10B981</color>
     <color name="white">#FFFFFF</color>
     <color name="white_alpha">#E6FFFFFF</color>
+    <color name="white_alpha_60">#99FFFFFF</color>
     <string name="add_to_cart">Add to Cart</string>
     <string name="added">Added ✓</string>
     <string name="added_quantity">Added · %1$d</string>
     <string name="all_restaurants">All Restaurants</string>
     <string name="app_name">FoodRush</string>
+    <string name="apply">Apply</string>
     <string name="back_to_home">Back to Home</string>
     <string name="bill_details">Bill Details</string>
+    <string name="call_partner">Call</string>
+    <string name="cancel_order">Cancel Order</string>
     <string name="cash_on_delivery">Cash on Delivery</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="coupon_applied">Coupon applied! You saved ₹%1$.2f</string>
+    <string name="coupon_discount">Coupon Discount</string>
     <string name="create_account">Create Account</string>
     <string name="credit_card">Card</string>
     <string name="dark_mode">Dark Mode</string>
@@ -54,6 +72,7 @@
     <string name="deliver_to">Delivering to</string>
     <string name="delivery_fee">Delivery Fee</string>
     <string name="delivery_instruction">Delivering in ~30 mins to your saved address</string>
+    <string name="delivery_partner">Delivery Partner</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="email">Email</string>
     <string name="empty_cart">Your cart is empty!\nAdd some delicious food 🍔</string>
@@ -96,8 +115,17 @@
     <string name="notifications">Notifications</string>
     <string name="notifications_subtitle">Get updates</string>
     <string name="online_upi">UPI / Online Pay</string>
+    <string name="order_cancelled_success">Order has been cancelled</string>
     <string name="order_placed">Order Placed! 🎉</string>
     <string name="order_save_failed">Couldn’t place your order. Please try again.</string>
+    <string name="order_status_done">Delivered</string>
+    <string name="order_status_done_sub">Enjoy your meal! Please rate us</string>
+    <string name="order_status_out">Out for Delivery</string>
+    <string name="order_status_out_sub">Delivery partner is on the way with your food</string>
+    <string name="order_status_placed">Order Placed &amp; Confirmed</string>
+    <string name="order_status_placed_sub">Restaurant has accepted your order</string>
+    <string name="order_status_prep">Food is Being Prepared</string>
+    <string name="order_status_prep_sub">Chef is preparing your delicious meal</string>
     <string name="order_subtitle">Your food is being prepared.\nEstimated delivery: 30–45 minutes.</string>
     <string name="password">Password</string>
     <string name="payment_method">Payment Method</string>
@@ -106,6 +134,7 @@
     <string name="placing_order">Placing order…</string>
     <string name="profile_info">ACCOUNT INFORMATION</string>
     <string name="project_id" translatable="false">foodrushv2</string>
+    <string name="remove">Remove</string>
     <string name="reset_email_sent">Password reset email sent!</string>
     <string name="search_food">Search food, restaurants…</string>
     <string name="section_account">ACCOUNT</string>
@@ -116,18 +145,56 @@
     <string name="tagline">Delivered hot, delivered fast.</string>
     <string name="taxes_and_charges">Taxes &amp; Restaurant Charges (5%)</string>
     <string name="to_pay">To Pay</string>
+    <string name="track_order">Track Live Order 🛵</string>
     <style name="Theme.FoodRush" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
         <item name="android:windowBackground">@color/background</item>
-        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:statusBarColor">@color/primary</item>
         <item name="android:navigationBarColor">@color/white</item>
         <item name="android:windowLightNavigationBar">true</item>
-        <item name="android:fontFamily">sans</item>
+
+        
+        <item name="materialButtonStyle">@style/Widget.FoodRush.Button.Primary</item>
     </style>
     <style name="Theme.FoodRush.Splash" parent="Theme.FoodRush">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowBackground">@color/primary</item>
+    </style>
+    <style name="Widget.FoodRush.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="rippleColor">@color/button_ripple</item>
+    </style>
+    <style name="Widget.FoodRush.Button.Pill" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/primary</item>
+        <item name="backgroundTint">@color/primary_light</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="elevation">0dp</item>
+        <item name="rippleColor">@color/button_ripple</item>
+    </style>
+    <style name="Widget.FoodRush.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="elevation">3dp</item>
+        <item name="rippleColor">@color/white_alpha</item>
     </style>
 </resources>

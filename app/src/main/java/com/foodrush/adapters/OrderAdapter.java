@@ -79,6 +79,29 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
 
         // Status Styling and Timeline Progress
         bindStatusAndTimeline(holder, status);
+
+        // Track Live Order
+        holder.btnTrackOrder.setOnClickListener(v -> {
+            android.content.Intent intent = new android.content.Intent(context, com.foodrush.activities.OrderTrackingActivity.class);
+            intent.putExtra("ORDER_ID", order.getOrderId());
+            context.startActivity(intent);
+        });
+
+        // 🔁 Re-Order: Add all items from this order to the cart
+        holder.btnReorder.setOnClickListener(v -> {
+            if (order.getItems() != null && !order.getItems().isEmpty()) {
+                for (com.foodrush.models.CartItem ci : order.getItems()) {
+                    if (ci.getFoodItem() != null) {
+                        for (int i = 0; i < ci.getQuantity(); i++) {
+                            com.foodrush.database.CartManager.getInstance().addItem(ci.getFoodItem());
+                        }
+                    }
+                }
+                android.widget.Toast.makeText(context, "Items added to cart! Proceed to Cart tab 🛒", android.widget.Toast.LENGTH_LONG).show();
+            } else {
+                android.widget.Toast.makeText(context, "No items found to re-order", android.widget.Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void bindStatusAndTimeline(@NonNull OrderViewHolder holder, String status) {
@@ -101,6 +124,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
             holder.step2.setImageTintList(ColorStateList.valueOf(context.getColor(R.color.status_delivered)));
             holder.line2.setBackgroundColor(context.getColor(R.color.status_delivered));
             holder.step3.setImageTintList(ColorStateList.valueOf(context.getColor(R.color.status_delivered)));
+            holder.btnTrackOrder.setText("View Order Summary");
         } else if ("Preparing".equalsIgnoreCase(status) || "In Kitchen".equalsIgnoreCase(status)) {
             holder.tvStatus.setBackgroundResource(R.drawable.bg_status_preparing);
             holder.tvStatus.setTextColor(context.getColor(R.color.status_preparing));
@@ -108,15 +132,18 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
             holder.step1.setImageTintList(ColorStateList.valueOf(primaryColor));
             holder.line1.setBackgroundColor(primaryColor);
             holder.step2.setImageTintList(ColorStateList.valueOf(context.getColor(R.color.status_preparing)));
+            holder.btnTrackOrder.setText(R.string.track_order);
         } else if ("Cancelled".equalsIgnoreCase(status)) {
             holder.tvStatus.setBackgroundResource(R.drawable.bg_status_cancelled);
             holder.tvStatus.setTextColor(context.getColor(R.color.status_cancelled));
+            holder.btnTrackOrder.setText("View Order Details");
         } else {
             // Placed / Confirmed / Default
             holder.tvStatus.setBackgroundResource(R.drawable.bg_status_placed);
             holder.tvStatus.setTextColor(context.getColor(R.color.status_placed));
 
             holder.step1.setImageTintList(ColorStateList.valueOf(primaryColor));
+            holder.btnTrackOrder.setText(R.string.track_order);
         }
     }
 
@@ -129,6 +156,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
         TextView tvOrderId, tvDate, tvTotal, tvStatus, tvItemCount, tvPaymentMethod;
         ImageView step1, step2, step3;
         View line1, line2;
+        com.google.android.material.button.MaterialButton btnTrackOrder, btnReorder;
 
         OrderViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -138,6 +166,8 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
             tvStatus        = itemView.findViewById(R.id.tvStatus);
             tvItemCount     = itemView.findViewById(R.id.tvItemCount);
             tvPaymentMethod = itemView.findViewById(R.id.tvPaymentMethod);
+            btnTrackOrder   = itemView.findViewById(R.id.btnTrackOrder);
+            btnReorder      = itemView.findViewById(R.id.btnReorder);
 
             step1 = itemView.findViewById(R.id.step1);
             step2 = itemView.findViewById(R.id.step2);

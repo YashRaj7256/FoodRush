@@ -62,6 +62,29 @@ public class ProfileFragment extends Fragment {
             Intent intent = new Intent(getActivity(), SettingsActivity.class);
             startActivity(intent);
         });
+
+        // ☁️ SYNC AHMEDABAD RESTAURANTS TO FIREBASE
+        View btnSyncDatabase = view.findViewById(R.id.btnSyncDatabase);
+        if (btnSyncDatabase != null) {
+            btnSyncDatabase.setOnClickListener(v -> {
+                android.widget.Toast.makeText(getContext(), "Syncing 50+ Ahmedabad places to Firebase...", android.widget.Toast.LENGTH_SHORT).show();
+                FirebaseHelper.getInstance().seedSampleRestaurantsAndFoods(new FirebaseHelper.DataSeedListener() {
+                    @Override
+                    public void onSuccess(int count) {
+                        if (isAdded() && getContext() != null) {
+                            android.widget.Toast.makeText(getContext(), "✅ " + count + " Ahmedabad places synced to Firebase!", android.widget.Toast.LENGTH_LONG).show();
+                        }
+                    }
+
+                    @Override
+                    public void onError(String message) {
+                        if (isAdded() && getContext() != null) {
+                            android.widget.Toast.makeText(getContext(), "⚠️ Sync error: " + message, android.widget.Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+            });
+        }
     }
 
     /** Loads user data from Firebase Realtime Database */

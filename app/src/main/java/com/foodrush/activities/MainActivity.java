@@ -96,9 +96,31 @@ public class MainActivity extends AppCompatActivity {
                 .commit();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        updateCartBadge();
+    }
+
+    /** 🛒 Modern Cart Badge Updater */
+    public void updateCartBadge() {
+        if (bottomNav == null) return;
+        try {
+            int count = com.foodrush.database.CartManager.getInstance().getTotalCount();
+            com.google.android.material.badge.BadgeDrawable badge = bottomNav.getOrCreateBadge(R.id.nav_cart);
+            if (count > 0) {
+                badge.setVisible(true);
+                badge.setNumber(count);
+                badge.setBackgroundColor(getResources().getColor(R.color.primary));
+                badge.setBadgeTextColor(getResources().getColor(R.color.white));
+            } else {
+                badge.setVisible(false);
+            }
+        } catch (Exception ignored) {}
+    }
+
     /** Switch tab programmatically */
     public void switchToTab(int itemId) {
         bottomNav.setSelectedItemId(itemId);
     }
-
 }

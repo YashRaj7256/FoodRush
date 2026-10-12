@@ -94,5 +94,22 @@
     <string name="error_password_required">Password is required</string>
     <string name="error_password_length">Password must be at least 6 characters</string>
     <string name="error_login_failed">Login failed</string>
+    <string name="coupon_applied">Coupon applied! You saved ₹%1$.2f</string>
+    <string name="apply">Apply</string>
+    <string name="remove">Remove</string>
+    <string name="coupon_discount">Coupon Discount</string>
+    <string name="delivery_partner">Delivery Partner</string>
+    <string name="call_partner">Call</string>
+    <string name="track_order">Track Live Order 🛵</string>
+    <string name="order_status_placed">Order Placed &amp; Confirmed</string>
+    <string name="order_status_placed_sub">Restaurant has accepted your order</string>
+    <string name="order_status_prep">Food is Being Prepared</string>
+    <string name="order_status_prep_sub">Chef is preparing your delicious meal</string>
+    <string name="order_status_out">Out for Delivery</string>
+    <string name="order_status_out_sub">Delivery partner is on the way with your food</string>
+    <string name="order_status_done">Delivered</string>
+    <string name="order_status_done_sub">Enjoy your meal! Please rate us</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="order_cancelled_success">Order has been cancelled</string>
     <string name="error_generic">Something went wrong. Please try again.</string>
 </resources>

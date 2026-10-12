@@ -13,6 +13,7 @@ public class FoodItem {
     private String imageUrl;
     private String category;   // e.g. "Burger", "Pizza", "Drinks"
     private boolean available;
+    private boolean isVeg = true; // default true
 
     // Required empty constructor for Firebase deserialization
     public FoodItem() {}
@@ -51,6 +52,16 @@ public class FoodItem {
     public String getImageUrl()    { return imageUrl; }
     public String getCategory()    { return category; }
     public boolean isAvailable()   { return available; }
+    public boolean isVeg()         {
+        if (name != null) {
+            String lower = name.toLowerCase();
+            if (lower.contains("chicken") || lower.contains("mutton") || lower.contains("fish") ||
+                lower.contains("meat") || lower.contains("egg") || lower.contains("prawn") || lower.contains("beef") || lower.contains("bacon")) {
+                return false;
+            }
+        }
+        return isVeg;
+    }
 
     // ---- Setters ----
     public void setId(String id)               { this.id = id; }
@@ -60,4 +71,5 @@ public class FoodItem {
     public void setImageUrl(String imageUrl)   { this.imageUrl = imageUrl; }
     public void setCategory(String category)   { this.category = category; }
     public void setAvailable(boolean available){ this.available = available; }
+    public void setVeg(boolean veg)            { this.isVeg = veg; }
 }

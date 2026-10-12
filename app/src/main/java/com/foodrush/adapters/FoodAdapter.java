@@ -55,6 +55,10 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
         holder.tvPrice.setText(String.format("₹%.0f", item.getPrice()));
         holder.tvCategory.setText(item.getCategory());
 
+        if (holder.ivVegType != null) {
+            holder.ivVegType.setImageResource(item.isVeg() ? R.drawable.ic_veg : R.drawable.ic_non_veg);
+        }
+
         // Load image using Glide; fall back to placeholder
         Glide.with(context)
              .load(item.getImageUrl())
@@ -73,6 +77,9 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
             int updatedQuantity = CartManager.getInstance().getQuantity(item.getId());
             holder.btnAddToCart.setText(context.getString(R.string.added_quantity, updatedQuantity));
             Toast.makeText(context, item.getName() + " added to cart 🛒", Toast.LENGTH_SHORT).show();
+            if (context instanceof com.foodrush.activities.MainActivity) {
+                ((com.foodrush.activities.MainActivity) context).updateCartBadge();
+            }
         });
     }
 
@@ -83,13 +90,14 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
 
     /** ViewHolder: holds references to all views in item_food.xml */
     static class FoodViewHolder extends RecyclerView.ViewHolder {
-        ImageView ivFood;
+        ImageView ivFood, ivVegType;
         TextView  tvName, tvPrice, tvCategory;
         Button    btnAddToCart;
 
         FoodViewHolder(@NonNull View itemView) {
             super(itemView);
             ivFood      = itemView.findViewById(R.id.ivFood);
+            ivVegType   = itemView.findViewById(R.id.ivVegType);
             tvName      = itemView.findViewById(R.id.tvName);
             tvPrice     = itemView.findViewById(R.id.tvPrice);
             tvCategory  = itemView.findViewById(R.id.tvCategory);

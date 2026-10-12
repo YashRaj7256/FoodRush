@@ -1,0 +1,1756 @@
+{
+  "ahmd_1": {
+    "id": "ahmd_1",
+    "name": "Agashiye - The House of MG",
+    "category": "Gujarati Thali",
+    "area": "Lal Darwaja",
+    "description": "Heritage rooftop fine dining serving authentic Gujarati royal thali & seasonal delicacies.",
+    "rating": 4.8,
+    "deliveryTime": "35-40 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=600",
+    "foods": {
+      "ag_1": {
+        "id": "ag_1",
+        "name": "Grand Gujarati Royal Thali",
+        "description": "Khaman, Undhiyu, Rotli, Dal, Kadhi, Shrikhand, Farsan",
+        "price": 499,
+        "imageUrl": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500",
+        "category": "Gujarati",
+        "available": true,
+        "veg": true
+      },
+      "ag_2": {
+        "id": "ag_2",
+        "name": "Kesar Pista Shrikhand",
+        "description": "Velvety hung curd dessert flavoured with Kashmiri saffron",
+        "price": 149,
+        "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      },
+      "ag_3": {
+        "id": "ag_3",
+        "name": "Surti Undhiyu Bowl",
+        "description": "Traditional slow-cooked mixed winter vegetables with muthias",
+        "price": 229,
+        "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500",
+        "category": "Gujarati",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_2": {
+    "id": "ahmd_2",
+    "name": "Manek Chowk Sandwich Centre",
+    "category": "Street Food",
+    "area": "Manek Chowk",
+    "description": "Legendary night street food famous for loaded Gwalior Dosa & Chocolate Pineapple sandwich.",
+    "rating": 4.6,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600",
+    "foods": {
+      "mc_1": {
+        "id": "mc_1",
+        "name": "Cheese Jam Pineapple Sandwich",
+        "description": "Iconic grilled multi-layer sandwich loaded with cheese",
+        "price": 160,
+        "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500",
+        "category": "Sandwich",
+        "available": true,
+        "veg": true
+      },
+      "mc_2": {
+        "id": "mc_2",
+        "name": "Gwalior Butter Dosa",
+        "description": "Ultra-crispy dosa roasted in rich Amul butter with spicy masala",
+        "price": 180,
+        "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+        "category": "South Indian",
+        "available": true,
+        "veg": true
+      },
+      "mc_3": {
+        "id": "mc_3",
+        "name": "Cadbury Chocolate Sandwich",
+        "description": "Decadent melted Cadbury chocolate inside butter toasted bread",
+        "price": 140,
+        "imageUrl": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_3": {
+    "id": "ahmd_3",
+    "name": "Das Khaman",
+    "category": "Farsan & Snacks",
+    "area": "Navrangpura",
+    "description": "Ahmedabad's legendary snack house serving steam-hot Nylon & Vati Dal Khaman since 1922.",
+    "rating": 4.7,
+    "deliveryTime": "15-20 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600",
+    "foods": {
+      "dk_1": {
+        "id": "dk_1",
+        "name": "Nylon Khaman (250g)",
+        "description": "Melt-in-mouth spongy yellow khaman with green chillies & mustard tadka",
+        "price": 80,
+        "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500",
+        "category": "Farsan",
+        "available": true,
+        "veg": true
+      },
+      "dk_2": {
+        "id": "dk_2",
+        "name": "Vati Dal Khaman (250g)",
+        "description": "Coarse chana dal khaman tossed with garlic chutney",
+        "price": 90,
+        "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500",
+        "category": "Farsan",
+        "available": true,
+        "veg": true
+      },
+      "dk_3": {
+        "id": "dk_3",
+        "name": "Tam Tam Sev Khamani",
+        "description": "Spiced crushed khaman garnished with generous sev and pomegranate",
+        "price": 95,
+        "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500",
+        "category": "Farsan",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_4": {
+    "id": "ahmd_4",
+    "name": "Gordhan Thal",
+    "category": "Gujarati Thali",
+    "area": "SG Highway",
+    "description": "Grand family dining destination known for authentic Kathiyawadi & Gujarati unlimited thali.",
+    "rating": 4.6,
+    "deliveryTime": "30-35 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+    "foods": {
+      "gt_1": {
+        "id": "gt_1",
+        "name": "Unlimited Executive Thali",
+        "description": "4 Sabzis, Farsan, Puran Poli, Gujarati Kadhi, Basundi, Chaas",
+        "price": 440,
+        "imageUrl": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500",
+        "category": "Gujarati",
+        "available": true,
+        "veg": true
+      },
+      "gt_2": {
+        "id": "gt_2",
+        "name": "Puran Poli with Desi Ghee",
+        "description": "Sweet lentil stuffed wholewheat flatbread served with ghee",
+        "price": 120,
+        "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_5": {
+    "id": "ahmd_5",
+    "name": "Laxmi Ganthiya Rath",
+    "category": "Farsan & Snacks",
+    "area": "Nehrunagar",
+    "description": "The heart of Ahmedabad breakfast culture: hot Vanela Ganthiya & Sambharo round the clock.",
+    "rating": 4.7,
+    "deliveryTime": "15-20 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=600",
+    "foods": {
+      "lg_1": {
+        "id": "lg_1",
+        "name": "Vanela Ganthiya (250g)",
+        "description": "Fresh hand-rolled hot ganthiya served with fried chillies and papaya sambharo",
+        "price": 90,
+        "imageUrl": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=500",
+        "category": "Farsan",
+        "available": true,
+        "veg": true
+      },
+      "lg_2": {
+        "id": "lg_2",
+        "name": "Fafda & Jalebi Combo",
+        "description": "Crispy besan fafda with golden hot crispy jalebi & kadhi",
+        "price": 160,
+        "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500",
+        "category": "Farsan",
+        "available": true,
+        "veg": true
+      },
+      "lg_3": {
+        "id": "lg_3",
+        "name": "Methi Gota with Kadhi",
+        "description": "Fluffy fenugreek fritters served with tangy hot yellow kadhi",
+        "price": 85,
+        "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500",
+        "category": "Farsan",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_6": {
+    "id": "ahmd_6",
+    "name": "Moti Mahal Deluxe",
+    "category": "North Indian & Mughlai",
+    "area": "Kalupur",
+    "description": "Old City pioneer of rich Tandoori delicacies, creamy butter gravies & slow dum biryani.",
+    "rating": 4.4,
+    "deliveryTime": "30-35 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600",
+    "foods": {
+      "mm_1": {
+        "id": "mm_1",
+        "name": "Murg Makhani Butter Chicken",
+        "description": "Iconic Delhi-style tender chicken simmered in rich makhani sauce",
+        "price": 340,
+        "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500",
+        "category": "North Indian",
+        "available": true,
+        "veg": false
+      },
+      "mm_2": {
+        "id": "mm_2",
+        "name": "Tandoori Chicken Platter",
+        "description": "Whole chicken marinated in curd and roasted spices over charcoal",
+        "price": 360,
+        "imageUrl": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=500",
+        "category": "Starters",
+        "available": true,
+        "veg": false
+      },
+      "mm_3": {
+        "id": "mm_3",
+        "name": "Butter Garlic Naan",
+        "description": "Clay oven roasted leavened bread brushed with garlic butter",
+        "price": 65,
+        "imageUrl": "https://images.unsplash.com/photo-1621996346565-e3d5d6281057?w=500",
+        "category": "Breads",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_7": {
+    "id": "ahmd_7",
+    "name": "Tomato's",
+    "category": "Continental & American",
+    "area": "C.G. Road",
+    "description": "Retro Hollywood themed diner serving Mexican chimichangas, sizzling platters and burgers.",
+    "rating": 4.5,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600",
+    "foods": {
+      "tm_1": {
+        "id": "tm_1",
+        "name": "Mexican Chimichanga",
+        "description": "Golden crispy tortilla stuffed with spiced beans, corn and melted cheese",
+        "price": 320,
+        "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=500",
+        "category": "Continental",
+        "available": true,
+        "veg": true
+      },
+      "tm_2": {
+        "id": "tm_2",
+        "name": "The Big Boss Burger",
+        "description": "Grilled double patty topped with onion rings & smoky chipotle mayo",
+        "price": 280,
+        "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+        "category": "Burger",
+        "available": true,
+        "veg": true
+      },
+      "tm_3": {
+        "id": "tm_3",
+        "name": "Sizzling Brownie with Ice Cream",
+        "description": "Hot cast-iron plate brownie topped with vanilla bean scoop & chocolate fudge",
+        "price": 210,
+        "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_8": {
+    "id": "ahmd_8",
+    "name": "Vishalla",
+    "category": "Traditional & Gujarati",
+    "area": "Vasna",
+    "description": "Rustic village restaurant serving mud-pot village meals under lanterns and starry open sky.",
+    "rating": 4.6,
+    "deliveryTime": "35-40 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1505253758473-96b3015f21c9?w=600",
+    "foods": {
+      "vs_1": {
+        "id": "vs_1",
+        "name": "Traditional Village Meal",
+        "description": "Bajra no Rotlo with white butter, Ringna no Olo, and jaggery",
+        "price": 390,
+        "imageUrl": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500",
+        "category": "Gujarati",
+        "available": true,
+        "veg": true
+      },
+      "vs_2": {
+        "id": "vs_2",
+        "name": "Ringna No Olo (Baingan Bharta)",
+        "description": "Charcoal roasted spiced eggplant mash seasoned with green garlic",
+        "price": 190,
+        "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500",
+        "category": "Gujarati",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_9": {
+    "id": "ahmd_9",
+    "name": "Bhatiyar Gali Biryani Corner",
+    "category": "Mughlai & Biryani",
+    "area": "Teen Darwaza",
+    "description": "Centuries old culinary alley serving authentic Dum Biryani, Galouti Kebabs & Haleem.",
+    "rating": 4.5,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600",
+    "foods": {
+      "bg_1": {
+        "id": "bg_1",
+        "name": "Hyderabadi Dum Chicken Biryani",
+        "description": "Aromatic long-grain basmati cooked with saffron and spices",
+        "price": 260,
+        "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500",
+        "category": "Biryani",
+        "available": true,
+        "veg": false
+      },
+      "bg_2": {
+        "id": "bg_2",
+        "name": "Mutton Seekh Kebab (4 pcs)",
+        "description": "Charcoal grilled skewered minced mutton infused with ginger-garlic",
+        "price": 290,
+        "imageUrl": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=500",
+        "category": "Starters",
+        "available": true,
+        "veg": false
+      },
+      "bg_3": {
+        "id": "bg_3",
+        "name": "Chicken Shahi Korma",
+        "description": "Rich cashew and curd based mild aromatic curry",
+        "price": 310,
+        "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500",
+        "category": "Mughlai",
+        "available": true,
+        "veg": false
+      }
+    }
+  },
+  "ahmd_10": {
+    "id": "ahmd_10",
+    "name": "Swati Snacks",
+    "category": "Chaat & Traditional",
+    "area": "Prahlad Nagar",
+    "description": "Famous pure vegetarian kitchen celebrating authentic Panki, Handvo, and street chaat.",
+    "rating": 4.7,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600",
+    "foods": {
+      "ss_1": {
+        "id": "ss_1",
+        "name": "Banana Leaf Panki",
+        "description": "Delicate spiced rice pancake steamed between fresh banana leaves",
+        "price": 190,
+        "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500",
+        "category": "Gujarati",
+        "available": true,
+        "veg": true
+      },
+      "ss_2": {
+        "id": "ss_2",
+        "name": "Baked Masala Handvo",
+        "description": "Savory lentil cake with sesame crust served with green chutney",
+        "price": 210,
+        "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500",
+        "category": "Gujarati",
+        "available": true,
+        "veg": true
+      },
+      "ss_3": {
+        "id": "ss_3",
+        "name": "Sev Puri Chaat",
+        "description": "Crispy puris topped with potatoes, trio of chutneys and nylon sev",
+        "price": 140,
+        "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500",
+        "category": "Chaat",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_11": {
+    "id": "ahmd_11",
+    "name": "Jassi De Paranthe",
+    "category": "North Indian & Punjabi",
+    "area": "Bodakdev",
+    "description": "Famous Dhaba destination known for gigantic stuffed Punjabi tandoori paranthas & lassi.",
+    "rating": 4.4,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600",
+    "foods": {
+      "jp_1": {
+        "id": "jp_1",
+        "name": "Amritsari Aloo Pyaaz Parantha",
+        "description": "Stuffed wholewheat parantha with spiced potato, onion & dollop of butter",
+        "price": 180,
+        "imageUrl": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500",
+        "category": "Punjabi",
+        "available": true,
+        "veg": true
+      },
+      "jp_2": {
+        "id": "jp_2",
+        "name": "Paneer Tikka Masala",
+        "description": "Marinated paneer chunks grilled in tandoor and tossed in onion tomato gravy",
+        "price": 270,
+        "imageUrl": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500",
+        "category": "North Indian",
+        "available": true,
+        "veg": true
+      },
+      "jp_3": {
+        "id": "jp_3",
+        "name": "Patiala Lassi (500ml)",
+        "description": "Giant brass glass chilled creamy lassi with thick malai topping",
+        "price": 110,
+        "imageUrl": "https://images.unsplash.com/photo-1527661591475-527312dd65f5?w=500",
+        "category": "Drinks",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_12": {
+    "id": "ahmd_12",
+    "name": "Mocha Café & Bar",
+    "category": "Cafe & Continental",
+    "area": "Gulbai Tekra",
+    "description": "Trendy hangout serving artisan coffees, loaded nachos, wraps & chocolate mud cake.",
+    "rating": 4.5,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600",
+    "foods": {
+      "mo_1": {
+        "id": "mo_1",
+        "name": "Loaded Grande Nachos",
+        "description": "Tortilla crisps layered with salsa, jalapenos, sour cream and melted cheese",
+        "price": 280,
+        "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500",
+        "category": "Mexican",
+        "available": true,
+        "veg": true
+      },
+      "mo_2": {
+        "id": "mo_2",
+        "name": "Classic Iced Mocha Latte",
+        "description": "Espresso blended with dark Belgian cocoa and whole milk",
+        "price": 195,
+        "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=500",
+        "category": "Beverages",
+        "available": true,
+        "veg": true
+      },
+      "mo_3": {
+        "id": "mo_3",
+        "name": "Gooey Chocolate Mud Cake",
+        "description": "Rich molten chocolate cake served with dark ganache drizzle",
+        "price": 220,
+        "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_13": {
+    "id": "ahmd_13",
+    "name": "Kovallam South Indian",
+    "category": "South Indian",
+    "area": "Ellis Bridge",
+    "description": "Authentic Chennai and Mysore style breakfast with filter coffee, idlis and podi dosas.",
+    "rating": 4.6,
+    "deliveryTime": "15-20 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600",
+    "foods": {
+      "kv_1": {
+        "id": "kv_1",
+        "name": "Ghee Podi Masala Dosa",
+        "description": "Crisp paper dosa smeared with gunpowder masala and pure ghee",
+        "price": 175,
+        "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+        "category": "South Indian",
+        "available": true,
+        "veg": true
+      },
+      "kv_2": {
+        "id": "kv_2",
+        "name": "Button Ghee Sambar Idli (14 pcs)",
+        "description": "Mini steamed idlis drowned in hot aromatic Madras sambar",
+        "price": 130,
+        "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500",
+        "category": "South Indian",
+        "available": true,
+        "veg": true
+      },
+      "kv_3": {
+        "id": "kv_3",
+        "name": "Madras Filter Kaapi",
+        "description": "Traditional chicory blend frothed in brass davarah",
+        "price": 65,
+        "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=500",
+        "category": "Beverages",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_14": {
+    "id": "ahmd_14",
+    "name": "Simran Farm Fresh Chicken",
+    "category": "Fast Food & Snacks",
+    "area": "Vastrapur",
+    "description": "Hot grilled chicken rolls, tandoori leg pieces and crispy fried chicken wings.",
+    "rating": 4.3,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600",
+    "foods": {
+      "sf_1": {
+        "id": "sf_1",
+        "name": "Double Egg Chicken Kathi Roll",
+        "description": "Spicy chicken cubes wrapped in egg-layered paratha with mint chutney",
+        "price": 160,
+        "imageUrl": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500",
+        "category": "Rolls",
+        "available": true,
+        "veg": false
+      },
+      "sf_2": {
+        "id": "sf_2",
+        "name": "Crispy Fried Chicken Strips (6 pcs)",
+        "description": "Crunchy seasoned chicken fillets served with garlic dip",
+        "price": 220,
+        "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+        "category": "Fast Food",
+        "available": true,
+        "veg": false
+      }
+    }
+  },
+  "ahmd_15": {
+    "id": "ahmd_15",
+    "name": "Upper Crust Artisan Bakery",
+    "category": "Bakery & Desserts",
+    "area": "Vijay Cross Road",
+    "description": "Pioneering European pastry cafe known for cheesecakes, sourdough sandwiches & tarts.",
+    "rating": 4.6,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600",
+    "foods": {
+      "uc_1": {
+        "id": "uc_1",
+        "name": "New York Baked Cheesecake",
+        "description": "Silky Philadelphia cream cheese slice with berry compote",
+        "price": 240,
+        "imageUrl": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500",
+        "category": "Bakery",
+        "available": true,
+        "veg": true
+      },
+      "uc_2": {
+        "id": "uc_2",
+        "name": "Smoked Paneer Herb Focaccia",
+        "description": "Marinated cottage cheese with sun-dried tomato spread in focaccia",
+        "price": 230,
+        "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500",
+        "category": "Continental",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_16": {
+    "id": "ahmd_16",
+    "name": "Mirch Masala",
+    "category": "North Indian & Punjabi",
+    "area": "S.G. Highway",
+    "description": "Bollywood themed restaurant with retro Indian dhaba flavours and rich paneer gravies.",
+    "rating": 4.4,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600",
+    "foods": {
+      "mm2_1": {
+        "id": "mm2_1",
+        "name": "Dal Makhani Mirch Masala",
+        "description": "Slow-simmered black lentils cooked overnight with cream & butter",
+        "price": 220,
+        "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500",
+        "category": "North Indian",
+        "available": true,
+        "veg": true
+      },
+      "mm2_2": {
+        "id": "mm2_2",
+        "name": "Paneer Lababdar",
+        "description": "Soft paneer cubes in velvety cashew and tomato gravy with chopped onions",
+        "price": 260,
+        "imageUrl": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500",
+        "category": "North Indian",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_17": {
+    "id": "ahmd_17",
+    "name": "Law Garden Khau Gali",
+    "category": "Street Food & Chaat",
+    "area": "Law Garden",
+    "description": "Epic street food hub bustling with butter Pav Bhaji, Bhel Puri, and soft Kulfis.",
+    "rating": 4.5,
+    "deliveryTime": "15-20 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600",
+    "foods": {
+      "lg2_1": {
+        "id": "lg2_1",
+        "name": "Special Amul Butter Pav Bhaji",
+        "description": "Spiced vegetable mash loaded with extra butter, served with soft toasted pav",
+        "price": 160,
+        "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500",
+        "category": "Street Food",
+        "available": true,
+        "veg": true
+      },
+      "lg2_2": {
+        "id": "lg2_2",
+        "name": "Ahmedabadi Bhel Puri",
+        "description": "Puffed rice tossed with boiled potatoes, onions, sev and tangy tamarind",
+        "price": 70,
+        "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500",
+        "category": "Chaat",
+        "available": true,
+        "veg": true
+      },
+      "lg2_3": {
+        "id": "lg2_3",
+        "name": "Rabdi Malai Kulfi",
+        "description": "Dense frozen dessert stick infused with pistachio and cardamom",
+        "price": 80,
+        "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_18": {
+    "id": "ahmd_18",
+    "name": "Tinello - Hyatt Regency",
+    "category": "Italian Fine Dining",
+    "area": "Ashram Road",
+    "description": "Authentic handcrafted thin-crust pizzas, risottos and gourmet Italian tiramisu.",
+    "rating": 4.8,
+    "deliveryTime": "35-40 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600",
+    "foods": {
+      "tn_1": {
+        "id": "tn_1",
+        "name": "Quattro Formaggi Pizza",
+        "description": "12-inch pizza featuring gorgonzola, parmesan, ricotta and mozzarella",
+        "price": 550,
+        "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500",
+        "category": "Pizza",
+        "available": true,
+        "veg": true
+      },
+      "tn_2": {
+        "id": "tn_2",
+        "name": "Classic Italian Tiramisu",
+        "description": "Espresso soaked ladyfingers with whipped mascarpone cream",
+        "price": 320,
+        "imageUrl": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_19": {
+    "id": "ahmd_19",
+    "name": "Freezeland",
+    "category": "Fast Food & Shakes",
+    "area": "C.G. Road",
+    "description": "Ahmedabad youth favourite since 1989 for cheesy grilled sandwiches and thick milkshakes.",
+    "rating": 4.4,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600",
+    "foods": {
+      "fl_1": {
+        "id": "fl_1",
+        "name": "Cheese Chutney Grill Sandwich",
+        "description": "Crisp golden pressed sandwich with melted cheese & spicy mint chutney",
+        "price": 140,
+        "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500",
+        "category": "Fast Food",
+        "available": true,
+        "veg": true
+      },
+      "fl_2": {
+        "id": "fl_2",
+        "name": "Oreo Fantasy Thickshake",
+        "description": "Crushed Oreo cookies blended with chocolate ice cream",
+        "price": 150,
+        "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=500",
+        "category": "Drinks",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_20": {
+    "id": "ahmd_20",
+    "name": "Sasumaa Gujarati Thali",
+    "category": "Gujarati Thali",
+    "area": "Prahladnagar",
+    "description": "Homely authentic Gujarati experience with warm hospitality and unlimited bowls.",
+    "rating": 4.5,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=600",
+    "foods": {
+      "sm_1": {
+        "id": "sm_1",
+        "name": "Special Festive Gujarati Thali",
+        "description": "Complete thali with dry-fruit Basundi, Puran Poli and seasonal curry",
+        "price": 420,
+        "imageUrl": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500",
+        "category": "Gujarati",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_21": {
+    "id": "ahmd_21",
+    "name": "Nini's Kitchen",
+    "category": "Continental & Italian",
+    "area": "Prahlad Nagar",
+    "description": "Vibrant casual diner famous for garlic knots, pink sauce pasta, and crispy pizzas.",
+    "rating": 4.6,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1621996346565-e3d5d6281057?w=600",
+    "foods": {
+      "nk_1": {
+        "id": "nk_1",
+        "name": "Cheesy Garlic Herb Knots (6 pcs)",
+        "description": "Warm twisted dough knots topped with melted mozzarella & oregano",
+        "price": 210,
+        "imageUrl": "https://images.unsplash.com/photo-1619895092538-128341789043?w=500",
+        "category": "Starters",
+        "available": true,
+        "veg": true
+      },
+      "nk_2": {
+        "id": "nk_2",
+        "name": "Pink Sauce Penne Pasta",
+        "description": "Penne tossed in delicious blend of tangy tomato & creamy white sauce",
+        "price": 290,
+        "imageUrl": "https://images.unsplash.com/photo-1621996346565-e3d5d6281057?w=500",
+        "category": "Italian",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_22": {
+    "id": "ahmd_22",
+    "name": "Gwalia Sweets & Fast Food",
+    "category": "Sweets & Chaat",
+    "area": "IIM Road",
+    "description": "Royal Rajasthani sweet parlor famous for Pyaaz Kachori, Raj Kachori and ghewar.",
+    "rating": 4.5,
+    "deliveryTime": "15-20 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600",
+    "foods": {
+      "gw_1": {
+        "id": "gw_1",
+        "name": "Jodhpur Pyaaz Kachori (2 pcs)",
+        "description": "Flaky crust kachori with spicy caramelized onion filling",
+        "price": 80,
+        "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500",
+        "category": "Chaat",
+        "available": true,
+        "veg": true
+      },
+      "gw_2": {
+        "id": "gw_2",
+        "name": "Shahi Raj Kachori",
+        "description": "Crisp bowl filled with sprouts, curd, chutneys and pomegranate",
+        "price": 130,
+        "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500",
+        "category": "Chaat",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_23": {
+    "id": "ahmd_23",
+    "name": "Saleem Biryani",
+    "category": "Mughlai & Biryani",
+    "area": "Juhapura",
+    "description": "Renowned for fragrant long-grain chicken and mutton dum biryanis cooked over woodfire.",
+    "rating": 4.4,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600",
+    "foods": {
+      "sb_1": {
+        "id": "sb_1",
+        "name": "Special Chicken Dum Biryani",
+        "description": "Fragrant saffron rice with succulent marinated chicken",
+        "price": 240,
+        "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500",
+        "category": "Biryani",
+        "available": true,
+        "veg": false
+      },
+      "sb_2": {
+        "id": "sb_2",
+        "name": "Chicken Fry Crispy",
+        "description": "Spicy battered deep fried chicken pieces with onion rings",
+        "price": 190,
+        "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+        "category": "Starters",
+        "available": true,
+        "veg": false
+      }
+    }
+  },
+  "ahmd_24": {
+    "id": "ahmd_24",
+    "name": "Chaitanya Parantha",
+    "category": "North Indian",
+    "area": "Vastrapur Lake",
+    "description": "Cozy North Indian stop serving piping hot tava and tandoori paranthas with fresh curd.",
+    "rating": 4.3,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600",
+    "foods": {
+      "cp_1": {
+        "id": "cp_1",
+        "name": "Paneer Cheese Parantha",
+        "description": "Stuffed with grated cottage cheese and green chillies",
+        "price": 170,
+        "imageUrl": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500",
+        "category": "North Indian",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_25": {
+    "id": "ahmd_25",
+    "name": "Karnavati Dabeli Centre",
+    "category": "Street Food",
+    "area": "Maninagar",
+    "description": "Home of authentic Kutchi Dabeli with spicy potato masala, peanuts and pomegranate.",
+    "rating": 4.6,
+    "deliveryTime": "15-20 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600",
+    "foods": {
+      "kd_1": {
+        "id": "kd_1",
+        "name": "Special Butter Cheese Dabeli (2 pcs)",
+        "description": "Soft pav stuffed with masala potato, roasted masala peanuts, cheese & sev",
+        "price": 90,
+        "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500",
+        "category": "Street Food",
+        "available": true,
+        "veg": true
+      },
+      "kd_2": {
+        "id": "kd_2",
+        "name": "Oil Roast Masala Dabeli (2 pcs)",
+        "description": "Classic toasted dabeli with sweet-spicy garlic chutney",
+        "price": 60,
+        "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500",
+        "category": "Street Food",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_26": {
+    "id": "ahmd_26",
+    "name": "Café Mocha Bodakdev",
+    "category": "Cafe & Continental",
+    "area": "Sindhu Bhavan Road",
+    "description": "Chic hangout for gourmet cold brews, thin-crust woodfire pizzas and avocado toast.",
+    "rating": 4.6,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600",
+    "foods": {
+      "cb_1": {
+        "id": "cb_1",
+        "name": "Avocado Sourdough Toast",
+        "description": "Hass avocado mash on toasted sourdough topped with feta cheese",
+        "price": 290,
+        "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500",
+        "category": "Continental",
+        "available": true,
+        "veg": true
+      },
+      "cb_2": {
+        "id": "cb_2",
+        "name": "Hazelnut Cold Coffee Frappe",
+        "description": "Chilled roasted espresso with hazelnut cream syrup",
+        "price": 210,
+        "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=500",
+        "category": "Drinks",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_27": {
+    "id": "ahmd_27",
+    "name": "Atithi Dining Hall",
+    "category": "Gujarati Thali",
+    "area": "Bodakdev",
+    "description": "Popular for warm hospitality, unlimited Gujarati thali, and festive special desserts.",
+    "rating": 4.5,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+    "foods": {
+      "at_1": {
+        "id": "at_1",
+        "name": "Authentic Kathiyawadi Thali",
+        "description": "Sev Tameta, Baingan Bharta, Bajra Rotla, Garlic Chutney, Chaas",
+        "price": 380,
+        "imageUrl": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500",
+        "category": "Gujarati",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_28": {
+    "id": "ahmd_28",
+    "name": "The Red Bistro",
+    "category": "Continental & Italian",
+    "area": "Vastrapur",
+    "description": "Cosy Italian and Continental eatery famous for creamy risottos and baked lasagne.",
+    "rating": 4.4,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1621996346565-e3d5d6281057?w=600",
+    "foods": {
+      "rb_1": {
+        "id": "rb_1",
+        "name": "Baked Vegetable Lasagne",
+        "description": "Layers of pasta sheet, zucchini, bell peppers and parmesan béchamel",
+        "price": 310,
+        "imageUrl": "https://images.unsplash.com/photo-1621996346565-e3d5d6281057?w=500",
+        "category": "Italian",
+        "available": true,
+        "veg": true
+      },
+      "rb_2": {
+        "id": "rb_2",
+        "name": "Cheese Fondue Platter",
+        "description": "Warm Swiss cheese dip pot served with croutons and grilled veggies",
+        "price": 390,
+        "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500",
+        "category": "Continental",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_29": {
+    "id": "ahmd_29",
+    "name": "Shambhu's Coffee Bar",
+    "category": "Coffee & Snacks",
+    "area": "Vastrapur",
+    "description": "The classic Ahmedabad meeting point for cold cocoa, grilled maskabun & coffee.",
+    "rating": 4.5,
+    "deliveryTime": "15-20 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600",
+    "foods": {
+      "sc_1": {
+        "id": "sc_1",
+        "name": "Thick Cold Cocoa with Ice Cream",
+        "description": "Famous thick chocolate drink topped with rich chocolate scoop",
+        "price": 110,
+        "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=500",
+        "category": "Drinks",
+        "available": true,
+        "veg": true
+      },
+      "sc_2": {
+        "id": "sc_2",
+        "name": "Butter Maska Bun",
+        "description": "Soft sweet bun slit and loaded with salted Amul butter",
+        "price": 60,
+        "imageUrl": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500",
+        "category": "Snacks",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_30": {
+    "id": "ahmd_30",
+    "name": "Sankalp Restaurant",
+    "category": "South Indian",
+    "area": "C.G. Road",
+    "description": "World record holder for longest dosas; serving 30+ varieties of authentic dosas.",
+    "rating": 4.7,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600",
+    "foods": {
+      "sk_1": {
+        "id": "sk_1",
+        "name": "Military Ghee Roast Dosa",
+        "description": "Spicy red chili & garlic paste smeared thin crispy dosa",
+        "price": 210,
+        "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+        "category": "South Indian",
+        "available": true,
+        "veg": true
+      },
+      "sk_2": {
+        "id": "sk_2",
+        "name": "Rava Onion Masala Dosa",
+        "description": "Cracked semolina crisp crepe stuffed with tempered potatoes",
+        "price": 195,
+        "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+        "category": "South Indian",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_31": {
+    "id": "ahmd_31",
+    "name": "Havmor Restaurant",
+    "category": "North Indian & Desserts",
+    "area": "Navrangpura",
+    "description": "Ahmedabad legacy heritage dining serving legendary Chana Puri and ice creams since 1944.",
+    "rating": 4.6,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+    "foods": {
+      "hv_1": {
+        "id": "hv_1",
+        "name": "Signature Chana Bhatura",
+        "description": "Spiced dark Punjabi chickpeas served with two hot fluffy bhaturas",
+        "price": 220,
+        "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500",
+        "category": "North Indian",
+        "available": true,
+        "veg": true
+      },
+      "hv_2": {
+        "id": "hv_2",
+        "name": "Taj Mahal Ice Cream Sundae",
+        "description": "Three scoops of royal ice cream with nuts, fruit and chocolate fudge",
+        "price": 180,
+        "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_32": {
+    "id": "ahmd_32",
+    "name": "Purohit Thali",
+    "category": "Gujarati & Rajasthani",
+    "area": "Ellis Bridge",
+    "description": "Famous pure vegetarian kitchen serving traditional ghee rotis, dal baati and churma.",
+    "rating": 4.4,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+    "foods": {
+      "pt_1": {
+        "id": "pt_1",
+        "name": "Dal Baati Churma Platter",
+        "description": "Crisp baked baatis drowned in ghee, spicy panchmel dal and sweet churma",
+        "price": 340,
+        "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500",
+        "category": "Rajasthani",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_33": {
+    "id": "ahmd_33",
+    "name": "Madhavrao Kathiyawadi",
+    "category": "Kathiyawadi",
+    "area": "Sindhu Bhavan Road",
+    "description": "Spicy rural Gujarat comfort food: Sev Tameta, Ringna Olo and fresh buttermilk.",
+    "rating": 4.5,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+    "foods": {
+      "mr_1": {
+        "id": "mr_1",
+        "name": "Kathiyawadi Sev Tameta Nu Shaak",
+        "description": "Spicy tangy tomato gravy topped with crispy ratlami sev",
+        "price": 180,
+        "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500",
+        "category": "Kathiyawadi",
+        "available": true,
+        "veg": true
+      },
+      "mr_2": {
+        "id": "mr_2",
+        "name": "Hot Bajra Rotla with Ghee & Gur",
+        "description": "Thick wholesome pearl millet bread with organic jaggery",
+        "price": 70,
+        "imageUrl": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500",
+        "category": "Breads",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_34": {
+    "id": "ahmd_34",
+    "name": "Caffè Bella",
+    "category": "Italian & Continental",
+    "area": "Sindhu Bhavan",
+    "description": "Artisan woodfired Neapolitan pizzas, handmade ravioli and cold brewed mocktails.",
+    "rating": 4.7,
+    "deliveryTime": "30-35 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600",
+    "foods": {
+      "cb2_1": {
+        "id": "cb2_1",
+        "name": "Margherita Burrata Pizza",
+        "description": "San Marzano tomato base topped with fresh creamy whole Burrata ball",
+        "price": 480,
+        "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500",
+        "category": "Pizza",
+        "available": true,
+        "veg": true
+      },
+      "cb2_2": {
+        "id": "cb2_2",
+        "name": "Spinach & Ricotta Ravioli",
+        "description": "Handmade pasta pockets tossed in butter sage sauce",
+        "price": 360,
+        "imageUrl": "https://images.unsplash.com/photo-1621996346565-e3d5d6281057?w=500",
+        "category": "Italian",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_35": {
+    "id": "ahmd_35",
+    "name": "Fozzie's Pizzaiolo",
+    "category": "Artisan Pizza",
+    "area": "Bodakdev",
+    "description": "Handcrafted deep-dish Chicago and Neapolitan style sourdough pizzas with exotic toppings.",
+    "rating": 4.6,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600",
+    "foods": {
+      "fz_1": {
+        "id": "fz_1",
+        "name": "Smoky BBQ Paneer Sourdough Pizza",
+        "description": "Smoked paneer, caramelized onions, mozzarella and jalapeño",
+        "price": 380,
+        "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500",
+        "category": "Pizza",
+        "available": true,
+        "veg": true
+      },
+      "fz_2": {
+        "id": "fz_2",
+        "name": "Cheesy Jalapeno Poppers (6 pcs)",
+        "description": "Crisp golden bites oozing with melted cheese and spicy peppers",
+        "price": 190,
+        "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+        "category": "Starters",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_36": {
+    "id": "ahmd_36",
+    "name": "The Chocolate Room",
+    "category": "Desserts & Shakes",
+    "area": "Vastrapur",
+    "description": "Heaven for chocolate lovers: chocolate fondues, Belgian waffles and chocolate pizzas.",
+    "rating": 4.5,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=600",
+    "foods": {
+      "cr_1": {
+        "id": "cr_1",
+        "name": "Belgian Dark Chocolate Waffle",
+        "description": "Warm crisp waffle topped with molten Belgian chocolate & vanilla scoop",
+        "price": 220,
+        "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      },
+      "cr_2": {
+        "id": "cr_2",
+        "name": "Chocolate Bomb with Hot Fudge",
+        "description": "Chocolate sphere melting under warm dark fudge sauce",
+        "price": 240,
+        "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_37": {
+    "id": "ahmd_37",
+    "name": "Jay Bhavani Vadapav",
+    "category": "Street Food",
+    "area": "Satellite",
+    "description": "Gujarat's favorite jumbo vadapav and butter dabeli joint with signature red garlic chutney.",
+    "rating": 4.6,
+    "deliveryTime": "15-20 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=600",
+    "foods": {
+      "jb_1": {
+        "id": "jb_1",
+        "name": "Cheese Butter Grilled Vadapav",
+        "description": "Crispy spiced potato vada inside grilled buttery bun with cheese slice",
+        "price": 65,
+        "imageUrl": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=500",
+        "category": "Street Food",
+        "available": true,
+        "veg": true
+      },
+      "jb_2": {
+        "id": "jb_2",
+        "name": "Masala Cheese French Fries",
+        "description": "Spicy tossed fries with melted cheese drizzle",
+        "price": 110,
+        "imageUrl": "https://images.unsplash.com/photo-1576107232684-1279f3908594?w=500",
+        "category": "Snacks",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_38": {
+    "id": "ahmd_38",
+    "name": "Sankalp Gourmet South Indian",
+    "category": "South Indian",
+    "area": "Sindhu Bhavan",
+    "description": "Upscale contemporary South Indian kitchen with Malabar parottas, ghee podi and idlis.",
+    "rating": 4.6,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600",
+    "foods": {
+      "sk2_1": {
+        "id": "sk2_1",
+        "name": "Cheese Corn Spring Dosa",
+        "description": "Rolled crisp dosa filled with spicy vegetable and corn stuffing",
+        "price": 240,
+        "imageUrl": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500",
+        "category": "South Indian",
+        "available": true,
+        "veg": true
+      },
+      "sk2_2": {
+        "id": "sk2_2",
+        "name": "Malabar Parotta with Veg Kurma",
+        "description": "Flaky layered flatbread served with coconut milk curry",
+        "price": 210,
+        "imageUrl": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500",
+        "category": "South Indian",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_39": {
+    "id": "ahmd_39",
+    "name": "Kankaria Lake Food Plaza",
+    "category": "Street Food & Chaat",
+    "area": "Maninagar",
+    "description": "Lakeside food hub offering spicy tawa pulav, dahi puri and hot roasted bhutta.",
+    "rating": 4.4,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+    "foods": {
+      "kl_1": {
+        "id": "kl_1",
+        "name": "Special Mumbai Tawa Pulao",
+        "description": "Basmati rice tossed on giant tawa with pav bhaji butter masala",
+        "price": 150,
+        "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500",
+        "category": "Street Food",
+        "available": true,
+        "veg": true
+      },
+      "kl_2": {
+        "id": "kl_2",
+        "name": "Sev Batata Dahi Puri (6 pcs)",
+        "description": "Crispy puris topped with curd, sweet tamarind and mountain of sev",
+        "price": 90,
+        "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500",
+        "category": "Chaat",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_40": {
+    "id": "ahmd_40",
+    "name": "Under The Neem Tree",
+    "category": "North Indian Fine Dining",
+    "area": "Science City",
+    "description": "Serene garden restaurant serving charcoal kebabs, Awadhi biryani and saffron paneer.",
+    "rating": 4.7,
+    "deliveryTime": "35-40 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600",
+    "foods": {
+      "un_1": {
+        "id": "un_1",
+        "name": "Zafrani Paneer Tikka",
+        "description": "Charcoal roasted cottage cheese marinated in cream and Kashmiri saffron",
+        "price": 320,
+        "imageUrl": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500",
+        "category": "Starters",
+        "available": true,
+        "veg": true
+      },
+      "un_2": {
+        "id": "un_2",
+        "name": "Subz Dum Biryani Handi",
+        "description": "Slow clay-pot cooked basmati rice with minted herbs & raita",
+        "price": 280,
+        "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500",
+        "category": "Biryani",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_41": {
+    "id": "ahmd_41",
+    "name": "Shakti The Sandwich Shop",
+    "category": "Sandwich & Fast Food",
+    "area": "Prahlad Nagar",
+    "description": "Local sandwich institution with 40+ cold and grilled sandwich creations with cheese.",
+    "rating": 4.5,
+    "deliveryTime": "15-20 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600",
+    "foods": {
+      "sh_1": {
+        "id": "sh_1",
+        "name": "Junglee Cheese Grill Sandwich",
+        "description": "Signature spicy capsicum, corn and onion grilled sandwich",
+        "price": 160,
+        "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500",
+        "category": "Fast Food",
+        "available": true,
+        "veg": true
+      },
+      "sh_2": {
+        "id": "sh_2",
+        "name": "Aloo Masala Toast Sandwich",
+        "description": "Seasoned potatoes with green chutney and toasted crunch",
+        "price": 100,
+        "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500",
+        "category": "Fast Food",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_42": {
+    "id": "ahmd_42",
+    "name": "Kailash Parbat Hindu Sweets",
+    "category": "Chaat & Punjabi",
+    "area": "C.G. Road",
+    "description": "Sindhi and Mumbai street chaat master known for Ragda Pattice and Chole Bhature.",
+    "rating": 4.5,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600",
+    "foods": {
+      "kp_1": {
+        "id": "kp_1",
+        "name": "Ragda Pattice (2 pcs)",
+        "description": "Potato patties topped with dried white peas gravy, curd and sweet saunth",
+        "price": 130,
+        "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500",
+        "category": "Chaat",
+        "available": true,
+        "veg": true
+      },
+      "kp_2": {
+        "id": "kp_2",
+        "name": "Sindhi Koki with Curd & Pickle",
+        "description": "Thick spiced wholewheat flatbread roasted with onion & pomegranate seeds",
+        "price": 140,
+        "imageUrl": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500",
+        "category": "Snacks",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_43": {
+    "id": "ahmd_43",
+    "name": "The Jungle Bhookh",
+    "category": "Family Dining",
+    "area": "S.G. Highway",
+    "description": "Theme based family dining serving North Indian gravies, sizzling sizzlers and mocktails.",
+    "rating": 4.3,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+    "foods": {
+      "jb2_1": {
+        "id": "jb2_1",
+        "name": "Paneer Peshawari Gravy",
+        "description": "Rich crushed black pepper and cashew gravy with soft paneer cubes",
+        "price": 260,
+        "imageUrl": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500",
+        "category": "North Indian",
+        "available": true,
+        "veg": true
+      },
+      "jb2_2": {
+        "id": "jb2_2",
+        "name": "Jungle Special Sizzler",
+        "description": "French fries, rice, grilled paneer steak & brown pepper sauce on sizzler plate",
+        "price": 340,
+        "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=500",
+        "category": "Continental",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_44": {
+    "id": "ahmd_44",
+    "name": "Pizzawala's",
+    "category": "Pizza & Italian",
+    "area": "Ambawadi",
+    "description": "Authentic Gujarati fusion pizzas with double cheese burst and zesty herb toppings.",
+    "rating": 4.4,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600",
+    "foods": {
+      "pw_1": {
+        "id": "pw_1",
+        "name": "Double Cheese Volcano Pizza",
+        "description": "Overloaded cheese lava center surrounded by crunchy crust",
+        "price": 299,
+        "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500",
+        "category": "Pizza",
+        "available": true,
+        "veg": true
+      },
+      "pw_2": {
+        "id": "pw_2",
+        "name": "Peri Peri Cheese Garlic Bread",
+        "description": "Pull-apart garlic bread loaded with spicy peri-peri dust",
+        "price": 130,
+        "imageUrl": "https://images.unsplash.com/photo-1619895092538-128341789043?w=500",
+        "category": "Starters",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_45": {
+    "id": "ahmd_45",
+    "name": "Dhoom Dhaam Kathiyawadi",
+    "category": "Kathiyawadi",
+    "area": "Naroda",
+    "description": "Authentic Saurashtra village food with Baingan Olo, Ringan Bharta, and Kadhi Khichdi.",
+    "rating": 4.5,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600",
+    "foods": {
+      "dd_1": {
+        "id": "dd_1",
+        "name": "Rajwadi Dhokli Nu Shaak",
+        "description": "Traditional besan dumplings simmered in tangy buttermilk gravy",
+        "price": 170,
+        "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500",
+        "category": "Kathiyawadi",
+        "available": true,
+        "veg": true
+      },
+      "dd_2": {
+        "id": "dd_2",
+        "name": "Masala Vaghareli Khichdi",
+        "description": "Comforting yellow moong and rice tempered with cumin and ghee",
+        "price": 150,
+        "imageUrl": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500",
+        "category": "Gujarati",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_46": {
+    "id": "ahmd_46",
+    "name": "Mad By Tomato's",
+    "category": "American & Mexican",
+    "area": "Sindhu Bhavan",
+    "description": "Retro funky diner serving Chicago thick crust pizzas, buffalo wings & shakes.",
+    "rating": 4.6,
+    "deliveryTime": "30-35 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600",
+    "foods": {
+      "mbt_1": {
+        "id": "mbt_1",
+        "name": "Buffalo Spiced Chicken Wings (6 pcs)",
+        "description": "Crispy wings coated in hot tangy Louisiana glaze with blue cheese dip",
+        "price": 280,
+        "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+        "category": "Fast Food",
+        "available": true,
+        "veg": false
+      },
+      "mbt_2": {
+        "id": "mbt_2",
+        "name": "Truffle Mushroom Burger",
+        "description": "Herb roasted wild mushrooms with melted gouda and truffle mayo",
+        "price": 310,
+        "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=500",
+        "category": "Burger",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_47": {
+    "id": "ahmd_47",
+    "name": "Iscon Gathiya",
+    "category": "Farsan & Breakfast",
+    "area": "Iscon Cross Road",
+    "description": "Ahmedabad's legendary hot Bhavnagri Gathiya, Kadhi, Papaya Sambharo and Jalebi.",
+    "rating": 4.7,
+    "deliveryTime": "15-20 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=600",
+    "foods": {
+      "ig_1": {
+        "id": "ig_1",
+        "name": "Fresh Bhavnagri Gathiya (250g)",
+        "description": "Spiced savory chickpea flour snack served with hot sweet Kadhi",
+        "price": 85,
+        "imageUrl": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=500",
+        "category": "Farsan",
+        "available": true,
+        "veg": true
+      },
+      "ig_2": {
+        "id": "ig_2",
+        "name": "Pure Ghee Jalebi (250g)",
+        "description": "Crispy saffron sugar syrup soaked coils fried in pure desi ghee",
+        "price": 140,
+        "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_48": {
+    "id": "ahmd_48",
+    "name": "Saleem’s Nihari & Mughlai",
+    "category": "Mughlai",
+    "area": "Rakhial",
+    "description": "Famous slow-cooked overnight Nihari, Tawa Mutton and soft roomali rotis.",
+    "rating": 4.5,
+    "deliveryTime": "25-30 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600",
+    "foods": {
+      "sn_1": {
+        "id": "sn_1",
+        "name": "Slow Cooked Mutton Nihari",
+        "description": "Slow-stewed mutton shank in rich aromatic bone marrow gravy",
+        "price": 360,
+        "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500",
+        "category": "Mughlai",
+        "available": true,
+        "veg": false
+      },
+      "sn_2": {
+        "id": "sn_2",
+        "name": "Soft Roomali Roti (2 pcs)",
+        "description": "Paper thin handkerchief flatbread baked over inverted kadai",
+        "price": 50,
+        "imageUrl": "https://images.unsplash.com/photo-1621996346565-e3d5d6281057?w=500",
+        "category": "Breads",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_49": {
+    "id": "ahmd_49",
+    "name": "The Green House - House of MG",
+    "category": "Heritage Snacks & Drinks",
+    "area": "Lal Darwaja",
+    "description": "Courtyard garden heritage cafe serving seasonal hand-churned ice creams, khaman and teas.",
+    "rating": 4.7,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600",
+    "foods": {
+      "gh_1": {
+        "id": "gh_1",
+        "name": "Fresh Seasonal Sitaphal Ice Cream",
+        "description": "Hand-churned artisanal custard apple ice cream with natural fruit pulp",
+        "price": 160,
+        "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      },
+      "gh_2": {
+        "id": "gh_2",
+        "name": "Spiced Lemon Iced Chai",
+        "description": "Refreshing Assam black tea infused with lemon, mint and spices",
+        "price": 95,
+        "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=500",
+        "category": "Drinks",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_50": {
+    "id": "ahmd_50",
+    "name": "BBQ Nation Ahmedabad",
+    "category": "Barbeque & Grill",
+    "area": "Thaltej",
+    "description": "Celebrated live grill over table skewers, crispy corn, chicken tikkas and kulfis.",
+    "rating": 4.6,
+    "deliveryTime": "30-35 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=600",
+    "foods": {
+      "bbq_1": {
+        "id": "bbq_1",
+        "name": "Crispy Cajun Spiced Corn",
+        "description": "Golden fried sweet corn kernels tossed in tangy Cajun seasoning",
+        "price": 210,
+        "imageUrl": "https://images.unsplash.com/photo-1576107232684-1279f3908594?w=500",
+        "category": "Starters",
+        "available": true,
+        "veg": true
+      },
+      "bbq_2": {
+        "id": "bbq_2",
+        "name": "Tandoori Murgh Tikka Box",
+        "description": "Boneless chicken skewers marinated in yogurt, roasted cumin & fenugreek",
+        "price": 320,
+        "imageUrl": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=500",
+        "category": "Starters",
+        "available": true,
+        "veg": true
+      },
+      "bbq_3": {
+        "id": "bbq_3",
+        "name": "Assorted Kulfi Nation Platter",
+        "description": "Trio of Paan, Mango and Malai kulfis with falooda & rabdi",
+        "price": 160,
+        "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_51": {
+    "id": "ahmd_51",
+    "name": "Bikanervala Ahmedabad",
+    "category": "Chaat & North Indian",
+    "area": "Satellite",
+    "description": "North Indian specialties with Raj Kachori, Chhole Kulche, and traditional motichoor ladoos.",
+    "rating": 4.5,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600",
+    "foods": {
+      "bv_1": {
+        "id": "bv_1",
+        "name": "Amritsari Kulcha with Pindi Chana",
+        "description": "Crushed layered baked bread with tangy chickpea masala",
+        "price": 210,
+        "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500",
+        "category": "North Indian",
+        "available": true,
+        "veg": true
+      },
+      "bv_2": {
+        "id": "bv_2",
+        "name": "Moong Dal Halwa (150g)",
+        "description": "Rich golden halwa roasted with pure desi ghee and dry fruits",
+        "price": 130,
+        "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      }
+    }
+  },
+  "ahmd_52": {
+    "id": "ahmd_52",
+    "name": "Huber & Holly",
+    "category": "Gourmet Ice Cream & Pizza",
+    "area": "Bodakdev",
+    "description": "Luxury freshly-churned ice cream parlour famous for 16-flavor Mighty Midas gold-leaf cone.",
+    "rating": 4.7,
+    "deliveryTime": "20-25 mins",
+    "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=600",
+    "foods": {
+      "hh_1": {
+        "id": "hh_1",
+        "name": "Belgian Dark Chocolate Footlong Pastry",
+        "description": "Intense 70% cocoa pastry slice topped with gold leaf",
+        "price": 280,
+        "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?w=500",
+        "category": "Dessert",
+        "available": true,
+        "veg": true
+      },
+      "hh_2": {
+        "id": "hh_2",
+        "name": "Woodfired Truffle Mushroom Pizza",
+        "description": "Thin crust gourmet pizza with wild mushrooms and truffle drizzle",
+        "price": 420,
+        "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500",
+        "category": "Pizza",
+        "available": true,
+        "veg": true
+      }
+    }
+  }
+}

@@ -1,59 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Brand Primary Colors -->
+    <color name="primary">#FF4B2B</color>
+    <color name="primary_dark">#E03A1B</color>
+    <color name="primary_light">#FFF2EE</color>
+    <color name="primary_gradient_start">#FF5722</color>
+    <color name="primary_gradient_end">#FF3D00</color>
 
-    <!-- Primary Colors -->
-    <color name="primary">#E85D3F</color>
-    <color name="primary_dark">#B83D28</color>
-    <color name="primary_light">#FFF0EB</color>
-
-    <!-- Secondary Colors -->
-    <color name="secondary">#365C4A</color>
-    <color name="secondary_light">#E8F3ED</color>
-    <color name="accent">#F8C56B</color>
+    <!-- Secondary & Accent Colors -->
+    <color name="secondary">#1E232C</color>
+    <color name="secondary_light">#F4F6F9</color>
+    <color name="accent">#FFA000</color>
+    <color name="accent_light">#FFF8E1</color>
 
     <!-- Background & Surface -->
-    <color name="background">#FFF9F6</color>
+    <color name="background">#F8F9FD</color>
     <color name="card_bg">#FFFFFF</color>
-    <color name="surface">#FFF0EB</color>
+    <color name="surface">#F4F6F9</color>
+    <color name="surface_variant">#ECEFF3</color>
 
     <!-- Basic Colors -->
     <color name="white">#FFFFFF</color>
     <color name="white_alpha">#E6FFFFFF</color>
+    <color name="white_alpha_60">#99FFFFFF</color>
     <color name="black">#121212</color>
+
     <!-- Text Colors -->
-    <color name="text_primary">#1F1B18</color>
-    <color name="text_secondary">#706864</color>
-    <color name="text_hint">#9B918C</color>
+    <color name="text_primary">#1A1D23</color>
+    <color name="text_secondary">#6E7787</color>
+    <color name="text_hint">#9EA5B1</color>
+    <color name="text_disabled">#B8BCC6</color>
 
     <!-- UI Elements -->
-    <color name="divider">#EDE4DF</color>
-    <color name="button_primary">#E85D3F</color>
-    <color name="button_secondary">#FFF0EB</color>
+    <color name="divider">#ECEFF3</color>
+    <color name="divider_subtle">#F1F3F6</color>
+    <color name="button_primary">#FF4B2B</color>
+    <color name="button_secondary">#FFF2EE</color>
+    <color name="button_ripple">#26FF4B2B</color>
 
     <!-- Status Colors -->
-    <color name="success">#6B9B6D</color>
-    <color name="error">#D35D5D</color>
-    <color name="rating">#F2C94C</color>
+    <color name="success">#10B981</color>
+    <color name="success_light">#E6F9F2</color>
+    <color name="error">#EF4444</color>
+    <color name="error_light">#FEE2E2</color>
+    <color name="rating">#F59E0B</color>
+    <color name="rating_bg">#FFFBEB</color>
+    <color name="veg_green">#10B981</color>
+    <color name="non_veg_red">#EF4444</color>
 
     <!-- Navigation -->
-
-    <color name="nav_active">#E85D3F</color>
-    <color name="nav_inactive">#8A817D</color>
-
+    <color name="nav_active">#FF4B2B</color>
+    <color name="nav_inactive">#8E95A2</color>
 
     <!-- Extra & Statuses -->
-    <color name="red">#D35D5D</color>
-    <color name="green">#6B9B6D</color>
-    <color name="status_placed">#E85D3F</color>
+    <color name="red">#EF4444</color>
+    <color name="green">#10B981</color>
+    <color name="status_placed">#FF4B2B</color>
     <color name="status_placed_bg">#FFF0EB</color>
-    <color name="status_preparing">#E67E22</color>
-    <color name="status_preparing_bg">#FEF5E7</color>
-    <color name="status_delivering">#2980B9</color>
-    <color name="status_delivering_bg">#EBF5FB</color>
-    <color name="status_delivered">#27AE60</color>
-    <color name="status_delivered_bg">#EAFAF1</color>
-    <color name="status_cancelled">#C0392B</color>
-    <color name="status_cancelled_bg">#FDEDEC</color>
-    <color name="payment_selected_border">#E85D3F</color>
-    <color name="payment_unselected_border">#EDE4DF</color>
+    <color name="status_preparing">#F59E0B</color>
+    <color name="status_preparing_bg">#FEF3C7</color>
+    <color name="status_delivering">#3B82F6</color>
+    <color name="status_delivering_bg">#EFF6FF</color>
+    <color name="status_delivered">#10B981</color>
+    <color name="status_delivered_bg">#ECFDF5</color>
+    <color name="status_cancelled">#EF4444</color>
+    <color name="status_cancelled_bg">#FEF2F2</color>
+    <color name="payment_selected_border">#FF4B2B</color>
+    <color name="payment_unselected_border">#ECEFF3</color>
 </resources>
