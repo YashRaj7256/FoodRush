@@ -169,6 +169,101 @@
                     android:nestedScrollingEnabled="false"
                     android:paddingTop="4dp" />
 
+                <!-- Delivery Instructions Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="12dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="1dp"
+                    app:strokeColor="@color/divider"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="📝 Delivery Instructions"
+                            android:textColor="@color/text_primary"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <!-- Quick suggestion chips -->
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/chipInstructDoor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/chip_unselected"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp"
+                                    android:text="🚪 Leave at door"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/chipInstructBell"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:background="@drawable/chip_unselected"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp"
+                                    android:text="🔕 Don't ring bell"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/chipInstructCall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:background="@drawable/chip_unselected"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp"
+                                    android:text="📞 Call upon arrival"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="11sp" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <EditText
+                            android:id="@+id/etDeliveryInstructions"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bg_coupon_box"
+                            android:hint="Add notes for rider (e.g. 4th floor, gate code)"
+                            android:inputType="textCapSentences"
+                            android:paddingHorizontal="12dp"
+                            android:textColor="@color/text_primary"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
                 <!-- Payment Method Section -->
                 <TextView
                     android:layout_width="match_parent"
@@ -254,7 +349,7 @@
                         android:id="@+id/btnPaymentCard"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="6dp"
+                        android:layout_marginHorizontal="3dp"
                         android:layout_weight="1"
                         android:background="@drawable/bg_payment_unselected"
                         android:clickable="true"
@@ -275,6 +370,36 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:text="@string/credit_card"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <!-- FoodRush Wallet -->
+                    <LinearLayout
+                        android:id="@+id/btnPaymentWallet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_payment_unselected"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="💰"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvWalletLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Wallet"
                             android:textColor="@color/text_secondary"
                             android:textSize="11sp" />
                     </LinearLayout>
@@ -416,6 +541,20 @@
                                     android:paddingHorizontal="10dp"
                                     android:paddingVertical="5dp"
                                     android:text="SAVE20 (20% OFF)"
+                                    android:textColor="@color/primary"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/chipCouponAhmedabad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:background="@drawable/chip_unselected"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp"
+                                    android:text="AHMEDABAD (40% OFF)"
                                     android:textColor="@color/primary"
                                     android:textSize="11sp" />
                             </LinearLayout>

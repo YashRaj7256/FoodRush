@@ -61,6 +61,20 @@
                 android:textColor="@color/white"
                 android:textSize="11sp"
                 android:textStyle="bold" />
+
+            <!-- Favorite Heart Icon Button -->
+            <ImageView
+                android:id="@+id/ivFavorite"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8dp"
+                android:background="@drawable/circle_white_bg"
+                android:padding="6dp"
+                android:src="@drawable/ic_star_filled"
+                android:contentDescription="Favorite"
+                app:tint="@color/text_disabled" />
         </RelativeLayout>
 
         <!-- Restaurant Details -->

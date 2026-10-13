@@ -46,9 +46,13 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
     private Button btnPlaceOrder;
 
     // Payment selectors
-    private View btnPaymentCod, btnPaymentUpi, btnPaymentCard;
-    private TextView tvCodLabel, tvUpiLabel, tvCardLabel;
+    private View btnPaymentCod, btnPaymentUpi, btnPaymentCard, btnPaymentWallet;
+    private TextView tvCodLabel, tvUpiLabel, tvCardLabel, tvWalletLabel;
     private String selectedPaymentMethod = "Cash on Delivery";
+
+    // Delivery Instructions
+    private android.widget.EditText etDeliveryInstructions;
+    private TextView tvAddressDetails;
 
     // Coupon views & state
     private android.widget.EditText etCouponCode;
@@ -86,10 +90,16 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
         btnPaymentCod            = view.findViewById(R.id.btnPaymentCod);
         btnPaymentUpi            = view.findViewById(R.id.btnPaymentUpi);
         btnPaymentCard           = view.findViewById(R.id.btnPaymentCard);
+        btnPaymentWallet         = view.findViewById(R.id.btnPaymentWallet);
 
         tvCodLabel               = view.findViewById(R.id.tvCodLabel);
         tvUpiLabel               = view.findViewById(R.id.tvUpiLabel);
         tvCardLabel              = view.findViewById(R.id.tvCardLabel);
+        tvWalletLabel            = view.findViewById(R.id.tvWalletLabel);
+
+        // Instructions views
+        etDeliveryInstructions   = view.findViewById(R.id.etDeliveryInstructions);
+        setupInstructionChips(view);
 
         // Coupon views
         etCouponCode             = view.findViewById(R.id.etCouponCode);
@@ -113,10 +123,9 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
     private void setupAddressSelector(View view) {
         TextView tvAddressIcon = view.findViewById(R.id.tvAddressIcon);
         TextView tvAddressType = view.findViewById(R.id.tvAddressType);
-        TextView tvAddressDetails = view.findViewById(R.id.tvAddressDetails);
+        tvAddressDetails = view.findViewById(R.id.tvAddressDetails);
         View btnChangeAddress = view.findViewById(R.id.btnChangeAddress);
         View cardDeliveryAddress = view.findViewById(R.id.cardDeliveryAddress);
-
         final String[] addressOptions = {
                 "🏠 Home - Flat 402, Sunshine Heights, Ring Road, Ahmedabad",
                 "🏢 Work - ByteSpace Tech Park, Tower B, 3rd Floor, Ahmedabad",
@@ -151,10 +160,32 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
         if (cardDeliveryAddress != null) cardDeliveryAddress.setOnClickListener(clickListener);
     }
 
+    private void setupInstructionChips(View view) {
+        TextView chipDoor = view.findViewById(R.id.chipInstructDoor);
+        TextView chipBell = view.findViewById(R.id.chipInstructBell);
+        TextView chipCall = view.findViewById(R.id.chipInstructCall);
+
+        View.OnClickListener listener = v -> {
+            TextView tv = (TextView) v;
+            String text = tv.getText().toString();
+            String current = etDeliveryInstructions.getText().toString().trim();
+            if (current.isEmpty()) {
+                etDeliveryInstructions.setText(text);
+            } else if (!current.contains(text)) {
+                etDeliveryInstructions.setText(current + ", " + text);
+            }
+        };
+
+        if (chipDoor != null) chipDoor.setOnClickListener(listener);
+        if (chipBell != null) chipBell.setOnClickListener(listener);
+        if (chipCall != null) chipCall.setOnClickListener(listener);
+    }
+
     private void initCoupons() {
         couponMap.put("RUSH50", new com.foodrush.models.Coupon("RUSH50", "50% OFF up to ₹100", 50, 100, 149));
         couponMap.put("HUNGRY", new com.foodrush.models.Coupon("HUNGRY", "Flat ₹75 OFF on orders above ₹199", 100, 75, 199));
         couponMap.put("SAVE20", new com.foodrush.models.Coupon("SAVE20", "20% OFF up to ₹150", 20, 150, 99));
+        couponMap.put("AHMEDABAD", new com.foodrush.models.Coupon("AHMEDABAD", "Welcome special! 40% OFF up to ₹120", 40, 120, 199));
     }
 
     private void setupCouponListeners(View view) {
@@ -179,10 +210,12 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
         View chipRush50 = view.findViewById(R.id.chipCouponRush50);
         View chipHungry = view.findViewById(R.id.chipCouponHungry);
         View chipSave20 = view.findViewById(R.id.chipCouponSave20);
+        View chipAhmedabad = view.findViewById(R.id.chipCouponAhmedabad);
 
         if (chipRush50 != null) chipRush50.setOnClickListener(v -> applyCouponCode("RUSH50"));
         if (chipHungry != null) chipHungry.setOnClickListener(v -> applyCouponCode("HUNGRY"));
         if (chipSave20 != null) chipSave20.setOnClickListener(v -> applyCouponCode("SAVE20"));
+        if (chipAhmedabad != null) chipAhmedabad.setOnClickListener(v -> applyCouponCode("AHMEDABAD"));
     }
 
     private void applyCouponCode(String code) {
@@ -221,6 +254,7 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
         btnPaymentCod.setOnClickListener(v -> selectPayment("Cash on Delivery"));
         btnPaymentUpi.setOnClickListener(v -> selectPayment("UPI / Online Pay"));
         btnPaymentCard.setOnClickListener(v -> selectPayment("Card"));
+        if (btnPaymentWallet != null) btnPaymentWallet.setOnClickListener(v -> selectPayment("FoodRush Wallet"));
     }
 
     private void selectPayment(String method) {
@@ -236,10 +270,12 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
         btnPaymentCod.setBackgroundResource(unselectedBg);
         btnPaymentUpi.setBackgroundResource(unselectedBg);
         btnPaymentCard.setBackgroundResource(unselectedBg);
+        if (btnPaymentWallet != null) btnPaymentWallet.setBackgroundResource(unselectedBg);
 
         tvCodLabel.setTextColor(secondaryColor);
         tvUpiLabel.setTextColor(secondaryColor);
         tvCardLabel.setTextColor(secondaryColor);
+        if (tvWalletLabel != null) tvWalletLabel.setTextColor(secondaryColor);
 
         // Apply active state
         if ("Cash on Delivery".equals(method)) {
@@ -248,9 +284,12 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
         } else if ("UPI / Online Pay".equals(method)) {
             btnPaymentUpi.setBackgroundResource(selectedBg);
             tvUpiLabel.setTextColor(primaryColor);
-        } else {
+        } else if ("Card".equals(method)) {
             btnPaymentCard.setBackgroundResource(selectedBg);
             tvCardLabel.setTextColor(primaryColor);
+        } else {
+            if (btnPaymentWallet != null) btnPaymentWallet.setBackgroundResource(selectedBg);
+            if (tvWalletLabel != null) tvWalletLabel.setTextColor(primaryColor);
         }
 
         tvSelectedPaymentNotice.setText(method);
@@ -365,24 +404,36 @@ public class CartFragment extends Fragment implements CartAdapter.CartUpdateList
             itemList.add(map);
         }
 
+        String deliveryAddr = tvAddressDetails != null ? tvAddressDetails.getText().toString() : "Vastrapur, Ahmedabad";
+        String instructions = etDeliveryInstructions != null ? etDeliveryInstructions.getText().toString().trim() : "";
+
         // Build order map
         Map<String, Object> orderMap = new HashMap<>();
         orderMap.put("orderId", orderId);
         orderMap.put("userId", uid);
         orderMap.put("items", itemList);
         orderMap.put("subtotal", subtotal);
+        orderMap.put("deliveryFee", 35.0);
+        orderMap.put("platformFee", 5.0);
         orderMap.put("discount", discount);
         if (appliedCoupon != null) {
-            orderMap.put("couponCode", appliedCoupon.getCode());
+            orderMap.put("appliedCoupon", appliedCoupon.getCode());
         }
         orderMap.put("totalAmount", finalTotal);
         orderMap.put("paymentMethod", selectedPaymentMethod);
+        orderMap.put("paymentCompleted", !"Cash on Delivery".equals(selectedPaymentMethod));
         orderMap.put("status", "Placed");
+        orderMap.put("deliveryAddress", deliveryAddr);
+        orderMap.put("deliveryInstructions", instructions);
+        orderMap.put("deliveryPartnerName", "Ramesh Kumar");
+        orderMap.put("deliveryPartnerPhone", "+91 98765 43210");
         orderMap.put("timestamp", System.currentTimeMillis());
 
         btnPlaceOrder.setEnabled(false);
         btnPlaceOrder.setText(R.string.placing_order);
 
+        // Save to /orders/{uid}/{orderId} and /all_orders/{orderId}
+        FirebaseHelper.getInstance().getAllOrdersRef().child(orderId).setValue(orderMap);
         FirebaseHelper.getInstance()
                 .getOrdersRef()
                 .child(uid)

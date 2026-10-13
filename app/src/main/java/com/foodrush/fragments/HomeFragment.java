@@ -136,6 +136,20 @@ public class HomeFragment extends Fragment {
         adapter.setOnItemClickListener(this::openRestaurant);
         featuredAdapter.setOnItemClickListener(this::openRestaurant);
 
+        adapter.setOnFavoriteClickListener((restaurant, isFavorite) -> {
+            com.google.firebase.auth.FirebaseUser user = com.google.firebase.auth.FirebaseAuth.getInstance().getCurrentUser();
+            if (user != null) {
+                FirebaseHelper.getInstance().toggleFavorite(user.getUid(), restaurant.getId(), isFavorite);
+            }
+        });
+        featuredAdapter.setOnFavoriteClickListener((restaurant, isFavorite) -> {
+            com.google.firebase.auth.FirebaseUser user = com.google.firebase.auth.FirebaseAuth.getInstance().getCurrentUser();
+            if (user != null) {
+                FirebaseHelper.getInstance().toggleFavorite(user.getUid(), restaurant.getId(), isFavorite);
+            }
+        });
+
+        loadUserFavorites();
         buildCategoryChips();
         loadRestaurants();
 
@@ -194,6 +208,32 @@ public class HomeFragment extends Fragment {
                 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             getUserLocation();
         }
+    }
+
+    private void loadUserFavorites() {
+        com.google.firebase.auth.FirebaseUser user = com.google.firebase.auth.FirebaseAuth.getInstance().getCurrentUser();
+        if (user == null) return;
+
+        FirebaseHelper.getInstance().getUsersRef()
+                .child(user.getUid())
+                .child("favoriteRestaurants")
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        java.util.Set<String> favSet = new java.util.HashSet<>();
+                        for (DataSnapshot ds : snapshot.getChildren()) {
+                            Boolean isFav = ds.getValue(Boolean.class);
+                            if (Boolean.TRUE.equals(isFav)) {
+                                favSet.add(ds.getKey());
+                            }
+                        }
+                        if (adapter != null) adapter.setFavorites(favSet);
+                        if (featuredAdapter != null) featuredAdapter.setFavorites(favSet);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {}
+                });
     }
 
     // CATEGORY

@@ -1,338 +1,334 @@
 [
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_activity_signup.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\activity_signup.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_item_settings_row.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/item_settings_row.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_auth_card.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_auth_card.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_veg.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_veg.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_item_restaurant.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\item_restaurant.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_item_restaurant.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/item_restaurant.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_status_preparing.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_status_preparing.xml"
+        "merged": "com.foodrush.app-merged_res-5:/color_nav_selector.xml.flat",
+        "source": "com.foodrush.app-main-7:/color/nav_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_status_cancelled.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_status_cancelled.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_activity_restaurant_detail.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/activity_restaurant_detail.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_fragment_orders.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\fragment_orders.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_activity_settings.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/activity_settings.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_status_placed.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_status_placed.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_status_preparing.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_status_preparing.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_plus.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_plus.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_activity_signup.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/activity_signup.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_non_veg.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_non_veg.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_status_cancelled.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_status_cancelled.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_orders.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_orders.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_status_delivering.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_status_delivering.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_fragment_cart.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\fragment_cart.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_item_food.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/item_food.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_bike.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_bike.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_activity_splash.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_logo_circle_glow.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_logo_circle_glow.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_star_filled.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_star_filled.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\menu_bottom_nav_menu.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\menu\\bottom_nav_menu.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_clock.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_clock.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_star_filled.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_star_filled.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_button_light.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_button_light.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_cart.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_cart.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_bike.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_bike.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_item_cart.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\item_cart.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_qty_circle.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_qty_circle.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\color_nav_selector.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\color\\nav_selector.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_filter.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_filter.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_qty_circle.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_qty_circle.xml"
+        "merged": "com.foodrush.app-merged_res-5:/mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "com.foodrush.app-main-7:/mipmap-xxhdpi/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-xxhdpi\\ic_launcher_round.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_call.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_call.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_notification.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_notification.xml"
+        "merged": "com.foodrush.app-merged_res-5:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.foodrush.app-main-7:/menu/bottom_nav_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_activity_restaurant_detail.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\activity_restaurant_detail.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_mail.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_mail.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_mail.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_mail.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_button_ripple.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_button_ripple.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_pizzahutt.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\pizzahutt.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_button_gradient.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_button_gradient.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_chip_unselected.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\chip_unselected.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_stepper_inactive.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_stepper_inactive.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_food_placeholder.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_food_placeholder.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_trash.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_trash.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_burger.png.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\burger.png"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_payment_unselected.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_payment_unselected.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_circle_white_bg.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\circle_white_bg.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_coupon_box.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_coupon_box.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_fragment_profile.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\fragment_profile.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_fragment_cart.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/fragment_cart.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_back.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_back.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_auth_card.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_auth_card.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_stepper_active.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_stepper_active.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_fragment_profile.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_item_order.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\item_order.xml"
+        "merged": "com.foodrush.app-merged_res-5:/mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "com.foodrush.app-main-7:/mipmap-xhdpi/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_splash_gradient.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_splash_gradient.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_cart.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_cart.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_veg.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_veg.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_nav_selector.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/nav_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_button_ripple.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_button_ripple.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_chevron_right.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_profile.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_profile.xml"
+        "merged": "com.foodrush.app-merged_res-5:/mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "com.foodrush.app-main-7:/mipmap-mdpi/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_filter.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_filter.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_item_cart.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/item_cart.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\mipmap-mdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-mdpi\\ic_launcher.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_activity_order_tracking.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/activity_order_tracking.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_activity_splash.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\activity_splash.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_fragment_orders.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/fragment_orders.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_button_gradient.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_button_gradient.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_payment_selected.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_payment_selected.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_bottom_nav.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_bottom_nav.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_activity_login.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_home.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_home.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_food.jpg.flat",
+        "source": "com.foodrush.app-main-7:/drawable/food.jpg"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-xxhdpi\\ic_launcher.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_minus.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_minus.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_activity_order_tracking.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\activity_order_tracking.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_location_pin.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_location_pin.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_payment_unselected.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_payment_unselected.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_profile.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_item_food.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\item_food.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_plus.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_plus.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_chevron_right.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_chevron_right.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_splash_gradient.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_splash_gradient.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_activity_order_confirmation.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\activity_order_confirmation.xml"
+        "merged": "com.foodrush.app-merged_res-5:/mipmap-xhdpi_ic_launcher_round.xml.flat",
+        "source": "com.foodrush.app-main-7:/mipmap-xhdpi/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_stepper_pill.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_stepper_pill.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_order_status_background.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/order_status_background.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_stepper_inactive.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_stepper_inactive.xml"
+        "merged": "com.foodrush.app-merged_res-5:/mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "com.foodrush.app-main-7:/mipmap-mdpi/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_nav_selector.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\nav_selector.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_food_placeholder.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_food_placeholder.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_button_light.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_button_light.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_search.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_search.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\mipmap-hdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-hdpi\\ic_launcher.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_back.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_back.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_chip_selected.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\chip_selected.xml"
-    },
-    {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\activity_main.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_activity_order_confirmation.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/activity_order_confirmation.xml"
     },
     {
         "merged": "com.foodrush.app-merged_res-5:/layout_fragment_home.xml.flat",
         "source": "com.foodrush.app-main-7:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_item_settings_row.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\item_settings_row.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_chip_selected.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/chip_selected.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_payment_selected.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_payment_selected.xml"
+        "merged": "com.foodrush.app-merged_res-5:/mipmap-xxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.foodrush.app-main-7:/mipmap-xxhdpi/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\mipmap-hdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-hdpi\\ic_launcher_round.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_lock.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_lock.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_bottom_nav.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_bottom_nav.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_home.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_home.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_coupon_box.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_coupon_box.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_stepper_active.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_stepper_active.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_status_delivered.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_status_delivered.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_pizzahut.jpg.flat",
+        "source": "com.foodrush.app-main-7:/drawable/pizzahut.jpg"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_trash.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_trash.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_status_delivered.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_status_delivered.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_discount.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_discount.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_arrow_forward.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_arrow_forward.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_food.jpg.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\food.jpg"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_promo_banner.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_promo_banner.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\mipmap-mdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-mdpi\\ic_launcher_round.xml"
+        "merged": "com.foodrush.app-merged_res-5:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "com.foodrush.app-main-7:/mipmap-hdpi/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_minus.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_minus.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_non_veg.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_non_veg.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_search.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_search.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_status_placed.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_status_placed.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\mipmap-xhdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-xhdpi\\ic_launcher.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_lock.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_lock.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_call.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_call.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_logo_circle_glow.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_logo_circle_glow.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_activity_settings.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\activity_settings.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_chip_unselected.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/chip_unselected.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_clock.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_clock.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_orders.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_orders.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_status_delivering.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_status_delivering.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_stepper_pill.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_stepper_pill.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_pizzahut.jpg.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\pizzahut.jpg"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_circle_white_bg.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/circle_white_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_promo_banner.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_promo_banner.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_notification.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_notification.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\mipmap-xhdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\mipmap-xhdpi\\ic_launcher_round.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_discount.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_discount.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_arrow_back.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_arrow_back.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_burger.png.flat",
+        "source": "com.foodrush.app-main-7:/drawable/burger.png"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\activity_login.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_activity_main.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_location_pin.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_location_pin.xml"
+        "merged": "com.foodrush.app-merged_res-5:/layout_item_order.xml.flat",
+        "source": "com.foodrush.app-main-7:/layout/item_order.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_ic_arrow_forward.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\ic_arrow_forward.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/ic_arrow_back.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_bg_rating_pill.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\bg_rating_pill.xml"
+        "merged": "com.foodrush.app-merged_res-5:/mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "com.foodrush.app-main-7:/mipmap-hdpi/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\drawable_order_status_background.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\drawable\\order_status_background.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_pizzahutt.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/pizzahutt.xml"
     },
     {
-        "merged": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-merged_res-5:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\Yash Raj\\.gradle\\daemon\\8.5\\com.foodrush.app-main-7:\\layout\\fragment_home.xml"
+        "merged": "com.foodrush.app-merged_res-5:/drawable_bg_rating_pill.xml.flat",
+        "source": "com.foodrush.app-main-7:/drawable/bg_rating_pill.xml"
     }
 ]

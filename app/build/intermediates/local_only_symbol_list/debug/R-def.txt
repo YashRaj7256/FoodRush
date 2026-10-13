@@ -118,6 +118,7 @@ id btnBackHome
 id btnCallRider
 id btnCancelOrder
 id btnChangeAddress
+id btnCoins
 id btnDelete
 id btnEnglish
 id btnHindi
@@ -127,19 +128,26 @@ id btnMinus
 id btnPaymentCard
 id btnPaymentCod
 id btnPaymentUpi
+id btnPaymentWallet
 id btnPlaceOrder
 id btnPlus
 id btnReorder
+id btnSavedAddresses
 id btnSignup
 id btnSyncDatabase
 id btnTrackOrder
+id btnWallet
 id cardDeliveryAddress
 id cardRider
 id cartContent
 id categoryContainer
+id chipCouponAhmedabad
 id chipCouponHungry
 id chipCouponRush50
 id chipCouponSave20
+id chipInstructBell
+id chipInstructCall
+id chipInstructDoor
 id dotStep1
 id dotStep2
 id dotStep3
@@ -148,6 +156,7 @@ id emptyState
 id emptyStateLayout
 id etConfirmPassword
 id etCouponCode
+id etDeliveryInstructions
 id etEmail
 id etName
 id etPassword
@@ -160,6 +169,7 @@ id footerSignup
 id fragmentContainer
 id headerLayout
 id ivCartThumb
+id ivFavorite
 id ivFood
 id ivImage
 id ivVegType
@@ -194,6 +204,7 @@ id tilPhone
 id timelineLayout
 id title
 id toolbar
+id tvAddressCountBadge
 id tvAddressDetails
 id tvAddressIcon
 id tvAddressType
@@ -213,6 +224,7 @@ id tvDiscount
 id tvEmail
 id tvEmpty
 id tvEta
+id tvFoodRushCoins
 id tvFooterBranding
 id tvForgotPassword
 id tvGrandTotal
@@ -248,6 +260,8 @@ id tvTrackingItems
 id tvTrackingOrderId
 id tvTrackingTotal
 id tvUpiLabel
+id tvWalletBalance
+id tvWalletLabel
 id tvWelcomeSubtitle
 id tvWelcomeTitle
 layout activity_login

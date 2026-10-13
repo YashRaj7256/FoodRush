@@ -3379,6 +3379,7 @@ id btnBackHome
 id btnCallRider
 id btnCancelOrder
 id btnChangeAddress
+id btnCoins
 id btnDelete
 id btnEnglish
 id btnHindi
@@ -3388,12 +3389,15 @@ id btnMinus
 id btnPaymentCard
 id btnPaymentCod
 id btnPaymentUpi
+id btnPaymentWallet
 id btnPlaceOrder
 id btnPlus
 id btnReorder
+id btnSavedAddresses
 id btnSignup
 id btnSyncDatabase
 id btnTrackOrder
+id btnWallet
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3413,9 +3417,13 @@ id chain2
 id chains
 id checkbox
 id checked
+id chipCouponAhmedabad
 id chipCouponHungry
 id chipCouponRush50
 id chipCouponSave20
+id chipInstructBell
+id chipInstructCall
+id chipInstructDoor
 id chronometer
 id circle_center
 id clear_text
@@ -3490,6 +3498,7 @@ id enterAlways
 id enterAlwaysCollapsed
 id etConfirmPassword
 id etCouponCode
+id etDeliveryInstructions
 id etEmail
 id etName
 id etPassword
@@ -3553,6 +3562,7 @@ id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
 id ivCartThumb
+id ivFavorite
 id ivFood
 id ivImage
 id ivVegType
@@ -3839,6 +3849,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvAddressCountBadge
 id tvAddressDetails
 id tvAddressIcon
 id tvAddressType
@@ -3858,6 +3869,7 @@ id tvDiscount
 id tvEmail
 id tvEmpty
 id tvEta
+id tvFoodRushCoins
 id tvFooterBranding
 id tvForgotPassword
 id tvGrandTotal
@@ -3893,6 +3905,8 @@ id tvTrackingItems
 id tvTrackingOrderId
 id tvTrackingTotal
 id tvUpiLabel
+id tvWalletBalance
+id tvWalletLabel
 id tvWelcomeSubtitle
 id tvWelcomeTitle
 id unchecked
